@@ -1,0 +1,24 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>공공데이터 API 사용 예제</title>
+</head>
+<body>
+    <p id="sample_data"></p>
+    <script>
+        const url = 'http://api.data.go.kr/openapi/tn_pubr_prkplce_info_api?Jy2bF3j9iq09CRZHCr64jZtf4WvJUsN6q7Asby4EBFPMiUi0PdbpU1KZH5ZXxbpj1wOFYAQAL%2B0o%2B%2FlxuAUgAA%3D%3D';
+
+        dataPane = document.getElementById("sample_data");
+
+        fetch(url)
+        .then(res => res.json())
+        .then(resJson => {
+            dataPane.innerText = JSON.stringify(resJson, null, 1);
+        })
+        .catch(err => {
+            console.error('Error:', err);
+            dataPane.innerText = 'API 호출 중 오류가 발생했습니다.';
+        });//jjjjjj
+    </script>
+</body>
+</html>
