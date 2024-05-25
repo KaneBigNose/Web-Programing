@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>공공데이터 API 사용 예제</title>
+</head>
+<body>
+  <p id="sample_data"></p>
+  <script>
+   var xhr = new XMLHttpRequest();
+    var url = 'http://apis.data.go.kr/6260000/BusanPblcPrkngInfoService/getPblcPrkngInfo'; /*URL*/
+    var queryParams = '?' + encodeURIComponent('serviceKey') + '='+'LiWd7lWtklB8CB9RmS3aMrSSe%2Fp0ONZz3FHTq29nrOeWqksH%2B%2FFP0mcLvImSXDC7%2F%2B96AvI1zed5UKJVOHrXFA%3D%3D'; /*Service Key*/
+    queryParams += '&' + encodeURIComponent('pageNo') + '=' + encodeURIComponent('1'); /**/
+    queryParams += '&' + encodeURIComponent('numOfRows') + '=' + encodeURIComponent('10'); /**/
+    queryParams += '&' + encodeURIComponent('resultType') + '=' + encodeURIComponent('json'); /**/
+    url=url+queryParams;
+    dataPane = document.getElementById("sample_data");
+    fetch(url)
+
+    .then(res => res.json())
+ .then(resJson => {
+ dataPane.innerText = JSON.stringify(resJson, null, 1);
+ })
+ </script
+  </script>
+</body>
+</html>
