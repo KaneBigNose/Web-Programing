@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공공데이터 API + 카카오맵 API</title>
+</head>
+
+<body>
+    <script>
+        function toBBParkingArea(json) {
+            return cast(JSON.parse(json), r("BBParkingArea"));
+        }
+
+        function bBParkingAreaToJson(value) {
+            return JSON.stringify(uncast(value, r("BBParkingArea")), null, 2);
+        }
+
+        function invalidValue(typ, val, key, parent = '') {
+            const prettyTyp = prettyTypeName(typ);
+            const parentText = parent ? ` on ${parent}` : '';
+            const keyText = key ? ` for key "${key}"` : '';
+            throw Error(`Invalid value${keyText}${parentText}. Expected ${prettyTyp} but got ${JSON.stringify(val)}`);
+        }
+
+        function prettyTypeName(typ) {
+            if (Array.isArray(typ)) {
+                if (typ.length === 2 && typ[0] === undefined) {
+                    return `an optional ${prettyTypeName(typ[1])}`;
+                } else {
+                    return `one of [${typ.map(a => { return prettyTypeName(a); }).join(", ")}]`;
+                }
+            } else if (typeof typ === "object" && typ.literal !== undefined) {
+                return typ.literal;
+            } else {
+                return typeof typ;
+            }
+        }
+
+        function jsonToJSProps(typ) {
+            if (typ.jsonToJS === undefined) {
+                const map = {};
+                typ.props.forEach((p) => map[p.json] = { key: p.js, typ: p.typ });
+                typ.jsonToJS = map;
+            }
+            return typ.jsonToJS;
+        }
+
+        function jsToJSONProps(typ) {
+            if (typ.jsToJSON === undefined) {
+                const map = {};
+                typ.props.forEach((p) => map[p.js] = { key: p.json, typ: p.typ });
+                typ.jsToJSON = map;
+            }
+            return typ.jsToJSON;
+        }
+
+        function transform(val, typ, getProps, key = '', parent = '') {
+            function transformPrimitive(typ, val) {
+                if (typeof typ === typeof val) return val;
+                return invalidValue(typ, val, key, parent);
+            }
+
+            function transformUnion(typs, val) {
+                // val must validate against one typ in typs
+                const l = typs.length;
+                for (let i = 0; i < l; i++) {
+                    const typ = typs[i];
+                    try {
+                        return transform(val, typ, getProps);
+                    } catch (_) { }
+                }
+                return invalidValue(typs, val, key, parent);
+            }
+
+            function transformEnum(cases, val) {
+                if (cases.indexOf(val) !== -1) return val;
+                return invalidValue(cases.map(a => { return l(a); }), val, key, parent);
+            }
+
+            function transformArray(typ, val) {
+                // val must be an array with no invalid elements
+                if (!Array.isArray(val)) return invalidValue(l("array"), val, key, parent);
+                return val.map(el => transform(el, typ, getProps));
+            }
+
+            function transformDate(val) {
+                if (val === null) {
+                    return null;
+                }
+                const d = new Date(val);
+                if (isNaN(d.valueOf())) {
+                    return invalidValue(l("Date"), val, key, parent);
+                }
+                return d;
+            }
+
+            function transformObject(props, additional, val) {
+                if (val === null || typeof val !== "object" || Array.isArray(val)) {
+                    return invalidValue(l(ref || "object"), val, key, parent);
+                }
+                const result = {};
+                Object.getOwnPropertyNames(props).forEach(key => {
+                    const prop = props[key];
+                    const v = Object.prototype.hasOwnProperty.call(val, key) ? val[key] : undefined;
+                    result[prop.key] = transform(v, prop.typ, getProps, key, ref);
+                });
+                Object.getOwnPropertyNames(val).forEach(key => {
+                    if (!Object.prototype.hasOwnProperty.call(props, key)) {
+                        result[key] = transform(val[key], additional, getProps, key, ref);
+                    }
+                });
+                return result;
+            }
+
+            if (typ === "any") return val;
+            if (typ === null) {
+                if (val === null) return val;
+                return invalidValue(typ, val, key, parent);
+            }
+            if (typ === false) return invalidValue(typ, val, key, parent);
+            let ref = undefined;
+            while (typeof typ === "object" && typ.ref !== undefined) {
+                ref = typ.ref;
+                typ = typeMap[typ.ref];
+            }
+            if (Array.isArray(typ)) return transformEnum(typ, val);
+            if (typeof typ === "object") {
+                return typ.hasOwnProperty("unionMembers") ? transformUnion(typ.unionMembers, val)
+                    : typ.hasOwnProperty("arrayItems") ? transformArray(typ.arrayItems, val)
+                        : typ.hasOwnProperty("props") ? transformObject(getProps(typ), typ.additional, val)
+                            : invalidValue(typ, val, key, parent);
+            }
+            // Numbers can be parsed by Date but shouldn't be.
+            if (typ === Date && typeof val !== "number") return transformDate(val);
+            return transformPrimitive(typ, val);
+        }
+
+        function cast(val, typ) {
+            return transform(val, typ, jsonToJSProps);
+        }
+
+        function uncast(val, typ) {
+            return transform(val, typ, jsToJSONProps);
+        }
+
+        function l(typ) {
+            return { literal: typ };
+        }
+
+        function a(typ) {
+            return { arrayItems: typ };
+        }
+
+        function u(...typs) {
+            return { unionMembers: typs };
+        }
+
+        function o(props, additional) {
+            return { props, additional };
+        }
+
+        function m(additional) {
+            return { props: [], additional };
+        }
+
+        function r(name) {
+            return { ref: name };
+        }
+
+        const typeMap = {
+            "BBParkingArea": o([
+                { json: "getIlglWkstInfo", js: "getIlglWkstInfo", typ: r("GetIlglWkstInfo") },
+            ], false),
+            "GetIlglWkstInfo": o([
+                { json: "header", js: "header", typ: r("Header") },
+                { json: "body", js: "body", typ: r("Body") },
+            ], false),
+            "Body": o([
+                { json: "items", js: "items", typ: r("Items") },
+                { json: "numOfRows", js: "numOfRows", typ: 0 },
+                { json: "pageNo", js: "pageNo", typ: 0 },
+                { json: "totalCount", js: "totalCount", typ: 0 },
+            ], false),
+            "Items": o([
+                { json: "item", js: "item", typ: a(r("Item")) },
+            ], false),
+            "Item": o([
+                { json: "jbYmd", js: "jbYmd", typ: "" },
+                { json: "violTm", js: "violTm", typ: "" },
+                { json: "violPlcNm", js: "violPlcNm", typ: "" },
+                { json: "violManSid1", js: "violManSid1", typ: "" },
+                { json: "violManSid2", js: "violManSid2", typ: "" },
+                { json: "rdnWhlAddr", js: "rdnWhlAddr", typ: "" },
+                { json: "schoolZoneYn", js: "schoolZoneYn", typ: r("SchoolZoneYn") },
+                { json: "gpsX", js: "gpsX", typ: "" },
+                { json: "gpsY", js: "gpsY", typ: "" },
+                { json: "carmeraNm", js: "carmeraNm", typ: r("CarmeraNm") },
+                { json: "ctlType", js: "ctlType", typ: r("CTLType") },
+                { json: "guCode", js: "guCode", typ: "" },
+                { json: "guNam", js: "guNam", typ: "" },
+            ], false),
+            "Header": o([
+                { json: "resultCode", js: "resultCode", typ: "" },
+                { json: "resultMsg", js: "resultMsg", typ: "" },
+            ], false),
+            "CarmeraNm": [
+                "",
+                "00000",
+                "1CarP",
+                "2CarP",
+            ],
+            "CTLType": [
+                "고정형CCTV단속",
+                "스마트폰단속",
+                "이동형CCTV단속",
+            ],
+            "SchoolZoneYn": [
+                "F",
+                "N",
+                "Y",
+            ],
+        };
+
+        // JSON 데이터
+        const json = '{"header": {"resultCode": "200", "resultMsg": "Success"}, "body": {"items": {"item": [{"jbYmd": "20230101", "violTm": "123456", "violPlcNm": "Test Place", "violManSid1": "1234", "violManSid2": "5678", "rdnWhlAddr": "123 Road, Test City", "schoolZoneYn": "Y", "gpsX": "37.1234", "gpsY": "127.5678", "carmeraNm": "1CarP", "ctlType": "고정형CCTV단속", "guCode": "12345", "guNam": "TestGu"}]}, "numOfRows": 1, "pageNo": 1, "totalCount": 1}}';
+
+        // JSON 데이터를 변환
+        const bBParkingArea = toBBParkingArea(json);
+
+        // 변환된 객체를 출력
+        console.log(bBParkingArea);
+
+    </script>
+
+    <div id="map" style="width:500px;height:400px;"></div>
+    <script type="text/javascript"
+        src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=ab20dd7e58d76f56e7c1af0c3c89152b"></script>
+
+    <script>
+        var container = document.getElementById('map');
+        var options = {
+            center: new kakao.maps.LatLng(33.450701, 126.570667),
+            level: 3
+        };
+
+        var map = new kakao.maps.Map(container, options);
+    </script>
+</body>
+
+</html>
