@@ -10,15 +10,10 @@
 <body>
     <div id="map" style="width: 700px;height:500px;"></div>
     <script type="text/javascript"
-        src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=ab20dd7e58d76f56e7c1af0c3c89152b&libraries=services"></script>
+        src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=ab20dd7e58d76f56e7c1af0c3c89152b&libraries=services"></script>
     <script>
 
-        var url = 'http://apis.data.go.kr/6260000/BusanPblcPrkngInfoService/getPblcPrkngInfo'; /*URL*/
-        var queryParams = '?' + encodeURIComponent('serviceKey') + '=' + 'LiWd7lWtklB8CB9RmS3aMrSSe%2Fp0ONZz3FHTq29nrOeWqksH%2B%2FFP0mcLvImSXDC7%2F%2B96AvI1zed5UKJVOHrXFA%3D%3D'; /*Service Key*/
-        queryParams += '&' + encodeURIComponent('pageNo') + '=' + encodeURIComponent('1'); /**/
-        queryParams += '&' + encodeURIComponent('numOfRows') + '=' + encodeURIComponent('100'); /**/
-        queryParams += '&' + encodeURIComponent('resultType') + '=' + encodeURIComponent('json'); /**/
-        url = url + queryParams;
+        var url = 'http://apis.data.go.kr/6260000/BusanIlglWkstInfoService/getIlglWkstInfo?serviceKey=%2B9h%2BiNdRBhISq%2BfkcRcEXacYgP9rBOreEaMlS6GulIOg18rVyFYyqnJa4l8yBvHsHn860gZpbboSHpRtR5IFfw%3D%3D&numOfRows=10&pageNo=1&resultType=json'; /*URL*/
 
         var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
             mapOption = {
@@ -29,28 +24,61 @@
         // 지도를 생성합니다    
         var map = new kakao.maps.Map(mapContainer, mapOption);
 
-        fetch(url)
-            .then((res) => res.json())
-            .then((resJson) => {
-                var markers = [];
-                var centers = resJson.data;
-                for (var i = 0; i < centers.length; i++) {
-                    var lat = centers[i]["lat"];
-                    var lng = centers[i]["lng"];
-                    var marker = new kakao.maps.Marker({
-                        position: new kakao.maps.LatLng(lat, lng),
-                        map: map,
-                    });
+        // 주소로 좌표를 검색
+        var geocoder = new kakao.maps.services.Geocoder();
 
-                    var infoWindow = new kakao.maps.InfoWindow({
-                        content: centers[i]["centerName"],
+        fetch(url)
+
+            .then(res => res.json())
+            .then(resJson => {
+                var markers = [];
+                var centers = resJson.getIlglWkstInfo.body.items.item;
+                var address = [];
+
+                for (var i = 0; i < centers.length; i++) {
+
+                    var FirstAdr = centers[i]["rdnWhlAddr"]; // 첫 주소
+                    var LastAdr = centers[i]["violPlcNm"]; // 끝 주소
+                    address[i] = FirstAdr + " " + LastAdr; // 총 주소
+
+                    // 주소로 좌표를 검색합니다
+                    geocoder.addressSearch(address[i], function (result, status) {
+
+                        // 정상적으로 검색이 완료됐으면 
+                        if (status === kakao.maps.services.Status.OK) {
+
+                            var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
+
+                            // 결과값으로 받은 위치를 마커로 표시합니다
+                            var marker = new kakao.maps.Marker({
+                                map: map,
+                                position: coords
+                            });
+
+                            var infoWindow = new kakao.maps.InfoWindow({
+                                content: centers[i]["ctlType"]
+                            });
+
+                            markers.push(marker);
+                            kakao.maps.event.addListener(marker, "click", mouseClickListener(map, marker, infoWindow));
+                            kakao.maps.event.addListener(marker, "mouseout", mouseOutListener(infoWindow));
+
+                        }
                     });
-                    markers.push(marker);
-                    kakao.maps.event.addListener(marker, "mouseover", mouseOverListener(map, marker, infoWindow));
-                    kakao.maps.event.addListener(marker, "mouseout", mouseOutListener(infoWindow));
                 }
-                clusterer.addMarkers(markers);
             });
+
+        function mouseClickListener(map, marker, infoWindow) {
+            return function () {
+                infoWindow.open(map, marker);
+            };
+        }
+
+        function mouseOutListener(infoWindow) {
+            return function () {
+                infoWindow.close();
+            };
+        }
 
         // var positions = [
         //     {
