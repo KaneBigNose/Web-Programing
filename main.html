@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>주소로 장소 표시하기</title>
+
+</head>
+
+<body>
+    <div id="map" style="width: 700px;height:500px;"></div>
+    <script type="text/javascript"
+        src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=ab20dd7e58d76f56e7c1af0c3c89152b&libraries=services"></script>
+    <script>
+
+        var url = 'http://apis.data.go.kr/6260000/BusanPblcPrkngInfoService/getPblcPrkngInfo'; /*URL*/
+        var queryParams = '?' + encodeURIComponent('serviceKey') + '=' + 'LiWd7lWtklB8CB9RmS3aMrSSe%2Fp0ONZz3FHTq29nrOeWqksH%2B%2FFP0mcLvImSXDC7%2F%2B96AvI1zed5UKJVOHrXFA%3D%3D'; /*Service Key*/
+        queryParams += '&' + encodeURIComponent('pageNo') + '=' + encodeURIComponent('1'); /**/
+        queryParams += '&' + encodeURIComponent('numOfRows') + '=' + encodeURIComponent('100'); /**/
+        queryParams += '&' + encodeURIComponent('resultType') + '=' + encodeURIComponent('json'); /**/
+        url = url + queryParams;
+
+        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+            mapOption = {
+                center: new kakao.maps.LatLng(35.13457, 129.1031), // 지도의 중심좌표
+                level: 3 // 지도의 확대 레벨
+            };
+
+        // 지도를 생성합니다    
+        var map = new kakao.maps.Map(mapContainer, mapOption);
+
+        fetch(url)
+            .then((res) => res.json())
+            .then((resJson) => {
+                var markers = [];
+                var centers = resJson.data;
+                for (var i = 0; i < centers.length; i++) {
+                    var lat = centers[i]["lat"];
+                    var lng = centers[i]["lng"];
+                    var marker = new kakao.maps.Marker({
+                        position: new kakao.maps.LatLng(lat, lng),
+                        map: map,
+                    });
+
+                    var infoWindow = new kakao.maps.InfoWindow({
+                        content: centers[i]["centerName"],
+                    });
+                    markers.push(marker);
+                    kakao.maps.event.addListener(marker, "mouseover", mouseOverListener(map, marker, infoWindow));
+                    kakao.maps.event.addListener(marker, "mouseout", mouseOutListener(infoWindow));
+                }
+                clusterer.addMarkers(markers);
+            });
+
+        // var positions = [
+        //     {
+        //         title: '이동형 CCTV 단속',
+        //         latlng: new kakao.maps.LatLng(35.2094805, 129.007315)
+        //     },
+        //     {
+        //         title: '고정형 CCTV 단속',
+        //         latlng: new kakao.maps.LatLng(35.1332918, 129.1008515)
+        //     }
+        // ];
+
+        // for (var i = 0; i < positions.length; i++) {
+        //     var marker = new kakao.maps.Marker({   // 마커를 생성합니다
+        //         map: map, // 마커를 표시할 지도
+        //         position: positions[i].latlng, // 마커를 표시할 위치
+        //         clickable: true
+        //     });
+
+        //     if (positions[i].title == '이동형 CCTV 단속') {
+        //         var iwContent = '<div style="padding:5px;"> 이동형 CCTV 단속 구간</div>';
+        //     }
+
+        //     else {
+        //         var iwContent = '<div style="padding:5px;"> 고정형 CCTV 단속 구간</div>';
+        //     }
+
+        //     var infowindow = new kakao.maps.InfoWindow({
+        //         content: iwContent
+        //     });
+
+        //     kakao.maps.event.addListener(marker, 'click', makeOverListener(map, marker, infowindow));
+        //     kakao.maps.event.addListener(marker, 'mouseout', makeOutListener(infowindow));
+        // }
+        // function makeOverListener(map, marker, infowindow) {
+        //     return function () {
+        //         infowindow.open(map, marker);
+        //     };
+        // }
+        // function makeOutListener(infowindow) {
+        //     return function () {
+        //         infowindow.close();
+        //     };
+        // }
+    </script>
+</body>
+
+</html>
