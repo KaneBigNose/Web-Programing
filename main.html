@@ -10,46 +10,40 @@
 <body>
     <div id="map" style="width: 700px;height:500px;"></div>
     <script type="text/javascript"
-        src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=ab20dd7e58d76f56e7c1af0c3c89152b&libraries=services"></script>
+        src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=ab20dd7e58d76f56e7c1af0c3c89152b&libraries=services,clusterer,drawing"></script>
     <script>
-
-        var url = 'http://apis.data.go.kr/6260000/BusanIlglWkstInfoService/getIlglWkstInfo?serviceKey=%2B9h%2BiNdRBhISq%2BfkcRcEXacYgP9rBOreEaMlS6GulIOg18rVyFYyqnJa4l8yBvHsHn860gZpbboSHpRtR5IFfw%3D%3D&numOfRows=10&pageNo=1&resultType=json'; /*URL*/
+        const url = 'https://apis.data.go.kr/6260000/BusanIlglWkstInfoService/getIlglWkstInfo?serviceKey=%2B9h%2BiNdRBhISq%2BfkcRcEXacYgP9rBOreEaMlS6GulIOg18rVyFYyqnJa4l8yBvHsHn860gZpbboSHpRtR5IFfw%3D%3D&numOfRows=1000&pageNo=1&resultType=json'; /*URL*/
 
         var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
             mapOption = {
                 center: new kakao.maps.LatLng(35.13457, 129.1031), // 지도의 중심좌표
-                level: 3 // 지도의 확대 레벨
+                level: 3
             };
-
-        // 지도를 생성합니다    
+  
         var map = new kakao.maps.Map(mapContainer, mapOption);
 
-        // 주소로 좌표를 검색
         var geocoder = new kakao.maps.services.Geocoder();
 
         fetch(url)
 
             .then(res => res.json())
             .then(resJson => {
-                var markers = [];
                 var centers = resJson.getIlglWkstInfo.body.items.item;
-                var address = [];
 
                 for (var i = 0; i < centers.length; i++) {
 
-                    var FirstAdr = centers[i]["rdnWhlAddr"]; // 첫 주소
-                    var LastAdr = centers[i]["violPlcNm"]; // 끝 주소
-                    address[i] = FirstAdr + " " + LastAdr; // 총 주소
+                    var FirstAdr = centers[i]["rdnWhlAddr"];
+                    var LastAdr = centers[i]["violPlcNm"]; 
+                    var address = FirstAdr + " " + LastAdr; 
 
-                    // 주소로 좌표를 검색합니다
-                    geocoder.addressSearch(address[i], function (result, status) {
+                    // console.log(address);
 
-                        // 정상적으로 검색이 완료됐으면 
+                    geocoder.addressSearch(address, function (result, status) {
+
                         if (status === kakao.maps.services.Status.OK) {
 
                             var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
 
-                            // 결과값으로 받은 위치를 마커로 표시합니다
                             var marker = new kakao.maps.Marker({
                                 map: map,
                                 position: coords
@@ -59,7 +53,6 @@
                                 content: centers[i]["ctlType"]
                             });
 
-                            markers.push(marker);
                             kakao.maps.event.addListener(marker, "click", mouseClickListener(map, marker, infoWindow));
                             kakao.maps.event.addListener(marker, "mouseout", mouseOutListener(infoWindow));
 
@@ -79,51 +72,54 @@
                 infoWindow.close();
             };
         }
-
-        // var positions = [
-        //     {
-        //         title: '이동형 CCTV 단속',
-        //         latlng: new kakao.maps.LatLng(35.2094805, 129.007315)
-        //     },
-        //     {
-        //         title: '고정형 CCTV 단속',
-        //         latlng: new kakao.maps.LatLng(35.1332918, 129.1008515)
-        //     }
-        // ];
-
-        // for (var i = 0; i < positions.length; i++) {
-        //     var marker = new kakao.maps.Marker({   // 마커를 생성합니다
-        //         map: map, // 마커를 표시할 지도
-        //         position: positions[i].latlng, // 마커를 표시할 위치
-        //         clickable: true
-        //     });
-
-        //     if (positions[i].title == '이동형 CCTV 단속') {
-        //         var iwContent = '<div style="padding:5px;"> 이동형 CCTV 단속 구간</div>';
-        //     }
-
-        //     else {
-        //         var iwContent = '<div style="padding:5px;"> 고정형 CCTV 단속 구간</div>';
-        //     }
-
-        //     var infowindow = new kakao.maps.InfoWindow({
-        //         content: iwContent
-        //     });
-
-        //     kakao.maps.event.addListener(marker, 'click', makeOverListener(map, marker, infowindow));
-        //     kakao.maps.event.addListener(marker, 'mouseout', makeOutListener(infowindow));
-        // }
-        // function makeOverListener(map, marker, infowindow) {
-        //     return function () {
-        //         infowindow.open(map, marker);
-        //     };
-        // }
-        // function makeOutListener(infowindow) {
-        //     return function () {
-        //         infowindow.close();
-        //     };
-        // }
     </script>
 </body>
 
 </html>
+
+
+
+
+
+        <!-- var positions = [
+             {
+                 title: '이동형 CCTV 단속',
+                 latlng: new kakao.maps.LatLng(35.2094805, 129.007315)
+             },
+             {
+                 title: '고정형 CCTV 단속',
+                 latlng: new kakao.maps.LatLng(35.1332918, 129.1008515)
+             }
+         ];
+        for (var i = 0; i < positions.length; i++) {
+          var marker = new kakao.maps.Marker({   // 마커를 생성합니다
+                 map: map, // 마커를 표시할 지도
+                 position: positions[i].latlng, // 마커를 표시할 위치
+                 clickable: true
+             });
+
+             if (positions[i].title == '이동형 CCTV 단속') {
+                 var iwContent = '<div style="padding:5px;"> 이동형 CCTV 단속 구간</div>';
+             }
+
+             else {
+                 var iwContent = '<div style="padding:5px;"> 고정형 CCTV 단속 구간</div>';
+             }
+
+             var infowindow = new kakao.maps.InfoWindow({
+                 content: iwContent
+             });
+
+             kakao.maps.event.addListener(marker, 'click', makeOverListener(map, marker, infowindow));
+             kakao.maps.event.addListener(marker, 'mouseout', makeOutListener(infowindow));
+         }
+         function makeOverListener(map, marker, infowindow) {
+             return function () {
+                 infowindow.open(map, marker);
+             };
+         }
+         function makeOutListener(infowindow) {
+             return function () {
+                 infowindow.close();
+             };
+         } -->
