@@ -22,7 +22,7 @@
         const parkingUrls = [
             "https://apis.data.go.kr/6260000/BusanPblcPrkngInfoService/getPblcPrkngInfo?serviceKey=%2B9h%2BiNdRBhISq%2BfkcRcEXacYgP9rBOreEaMlS6GulIOg18rVyFYyqnJa4l8yBvHsHn860gZpbboSHpRtR5IFfw%3D%3D&numOfRows=250&pageNo=1&resultType=json",
             "https://apis.data.go.kr/6260000/BusanPblcPrkngInfoService/getPblcPrkngInfo?serviceKey=%2B9h%2BiNdRBhISq%2BfkcRcEXacYgP9rBOreEaMlS6GulIOg18rVyFYyqnJa4l8yBvHsHn860gZpbboSHpRtR5IFfw%3D%3D&numOfRows=250&pageNo=2&resultType=json",
-            "https://apis.data.go.kr/6260000/BusanPblcPrkngInfoService/getPblcPrkngInfo?serviceKey=%2B9h%2BiNdRBhISq%2BfkcRcEXacYgP9rBOreEaMlS6GulIOg18rVyFYyqnJa4l8yBvHsHn860gZpbboSHpRtR5IFfw%3D%3D&numOfRows=44&pageNo=3&resultType=json"
+            "https://apis.data.go.kr/6260000/BusanPblcPrkngInfoService/getPblcPrkngInfo?serviceKey=%2B9h%2BiNdRBhISq%2BfkcRcEXacYgP9rBOreEaMlS6GulIOg18rVyFYyqnJa4l8yBvHsHn860gZpbboSHpRtR5IFfw%3D%3D&numOfRows=250&pageNo=3&resultType=json"
         ];
 
         var geocoder = new kakao.maps.services.Geocoder();
@@ -42,11 +42,11 @@
                 };
             map = new kakao.maps.Map(mapContainer, mapOption);
         }
-        function endMap(map) {
+
+        function endMap() {
             clearMarkers();
             var mapContainer = document.getElementById('map');
-            mapContainer.innerHTML = "";
-            map = null;
+            mapContainer.innerHTML = '';
         }
 
         function addMarkersFromUrl(url, type) {
