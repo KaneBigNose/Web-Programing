@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>주소로 주차장 장소 표시하기</title>
+</head>
+
+<body>
+    <div id="map" style="width: 700px;height:500px;"></div>
+    <script type="text/javascript"
+        src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=ab20dd7e58d76f56e7c1af0c3c89152b&libraries=services,clusterer,drawing"></script>
+    <script>
+        const url1 = 'https://apis.data.go.kr/6260000/BusanIlglWkstInfoService/getIlglWkstInfo?serviceKey=%2B9h%2BiNdRBhISq%2BfkcRcEXacYgP9rBOreEaMlS6GulIOg18rVyFYyqnJa4l8yBvHsHn860gZpbboSHpRtR5IFfw%3D%3D&numOfRows=1000&pageNo=1&resultType=json'; // 불법 주정차 api
+
+        const urls2 = [
+            "https://apis.data.go.kr/6260000/BusanPblcPrkngInfoService/getPblcPrkngInfo?serviceKey=%2B9h%2BiNdRBhISq%2BfkcRcEXacYgP9rBOreEaMlS6GulIOg18rVyFYyqnJa4l8yBvHsHn860gZpbboSHpRtR5IFfw%3D%3D&numOfRows=250&pageNo=1&resultType=json",
+            "https://apis.data.go.kr/6260000/BusanPblcPrkngInfoService/getPblcPrkngInfo?serviceKey=%2B9h%2BiNdRBhISq%2BfkcRcEXacYgP9rBOreEaMlS6GulIOg18rVyFYyqnJa4l8yBvHsHn860gZpbboSHpRtR5IFfw%3D%3D&numOfRows=250&pageNo=2&resultType=json",
+            "https://apis.data.go.kr/6260000/BusanPblcPrkngInfoService/getPblcPrkngInfo?serviceKey=%2B9h%2BiNdRBhISq%2BfkcRcEXacYgP9rBOreEaMlS6GulIOg18rVyFYyqnJa4l8yBvHsHn860gZpbboSHpRtR5IFfw%3D%3D&numOfRows=250&pageNo=3&resultType=json"
+        ];
+
+        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+            mapOption = {
+                center: new kakao.maps.LatLng(35.13457, 129.1031), // 지도의 중심좌표
+                level: 3 // 지도의 확대 레벨
+            };
+
+        var map = new kakao.maps.Map(mapContainer, mapOption);
+
+        var geocoder = new kakao.maps.services.Geocoder();
+
+        function addMarkersFromUrl(url) {
+            fetch(url)
+                .then(res => res.json())
+                .then(resJson => {
+                    var centers = resJson.getPblcPrkngInfo.body.items.item;
+                    centers.forEach(center => {
+                        var address = center["doroAddr"] !== "-" ? center["doroAddr"] : center["jibunAddr"];
+                        var pkngNam = center["pkNam"];
+
+                        geocoder.addressSearch(address, function (result, status) {
+                            if (status === kakao.maps.services.Status.OK) {
+                                var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
+
+                                var marker = new kakao.maps.Marker({
+                                    map: map,
+                                    position: coords
+                                });
+
+                                var infoWindow = new kakao.maps.InfoWindow({
+                                    content: pkngNam
+                                });
+
+                                kakao.maps.event.addListener(marker, "click", mouseClickListener(map, marker, infoWindow));
+                                kakao.maps.event.addListener(marker, "mouseout", mouseOutListener(infoWindow));
+                            }
+                        });
+                    });
+                });
+        }
+
+        function mouseClickListener(map, marker, infoWindow) {
+            return function () {
+                infoWindow.open(map, marker);
+            };
+        }
+
+        function mouseOutListener(infoWindow) {
+            return function () {
+                infoWindow.close();
+            };
+        }
+
+        urls2.forEach(url => addMarkersFromUrl(url));
+    </script>
+</body>
+
+</html>
