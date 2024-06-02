@@ -1,17 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
+
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="button.css">
-    <title>주소로 주차장 장소 표시하기</title>
+
+    <link rel="stylesheet" type="text/css" href="CSS/Buttons.css">
+    <link rel="stylesheet" type="text/css" href="CSS/BeArranged.css">
+
+    <script src="JavaScript/Parking.js" defer></script>
+    <script src="JavaScript/TopButtons.js" defer></script>
+    <script src="JavaScript/InfoBoxes.js"></script>
+
+    <title>부산시 주정차 단속 및 공영 주차장 위치 표시</title>
 </head>
 
 <body>
-    <button id="navBtn" type="button" onclick="openWindowAndDisableButton();">네비게이션</button>
-    <button id="moreBtn" type="button" onclick="toggleButtonGroup(); toggleButtons();">지도 + </button>
+    <div class="title-container">
+        <h1>부산시 주정차 단속 및 공영 주차장 위치 표시</h1>
+    </div>
+
+    <div class="button-container">
+        <button id="navBtn" type="button" onclick="openWindowAndDisableButton();">네비게이션</button>
+        <button id="moreBtn" type="button" onclick="toggleButtonGroup(); toggleButtons();">지도 + </button>
+    </div>
 
     <div id="btnContainer" class="btn-container hidden" style="display: none;">
         <div class="btn-group">
@@ -21,30 +35,16 @@
         </div>
     </div>
 
-    <div id="map" style="width: 700px;height:500px;"></div>
-    <script type="text/javascript"
-        src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=ab20dd7e58d76f56e7c1af0c3c89152b&libraries=services,clusterer,drawing"></script>
+    <div class="map-container"><div id="map"></div></div>
+
+    <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=ab20dd7e58d76f56e7c1af0c3c89152b&libraries=services,clusterer,drawing"></script>
     <script>
         const illegalUrl = 'https://apis.data.go.kr/6260000/BusanIlglWkstInfoService/getIlglWkstInfo?serviceKey=%2B9h%2BiNdRBhISq%2BfkcRcEXacYgP9rBOreEaMlS6GulIOg18rVyFYyqnJa4l8yBvHsHn860gZpbboSHpRtR5IFfw%3D%3D&numOfRows=1000&pageNo=1&resultType=json';
-
-        const parkingUrls = [
-            "https://apis.data.go.kr/6260000/BusanPblcPrkngInfoService/getPblcPrkngInfo?serviceKey=%2B9h%2BiNdRBhISq%2BfkcRcEXacYgP9rBOreEaMlS6GulIOg18rVyFYyqnJa4l8yBvHsHn860gZpbboSHpRtR5IFfw%3D%3D&numOfRows=250&pageNo=1&resultType=json",
-            "https://apis.data.go.kr/6260000/BusanPblcPrkngInfoService/getPblcPrkngInfo?serviceKey=%2B9h%2BiNdRBhISq%2BfkcRcEXacYgP9rBOreEaMlS6GulIOg18rVyFYyqnJa4l8yBvHsHn860gZpbboSHpRtR5IFfw%3D%3D&numOfRows=250&pageNo=2&resultType=json",
-            "https://apis.data.go.kr/6260000/BusanPblcPrkngInfoService/getPblcPrkngInfo?serviceKey=%2B9h%2BiNdRBhISq%2BfkcRcEXacYgP9rBOreEaMlS6GulIOg18rVyFYyqnJa4l8yBvHsHn860gZpbboSHpRtR5IFfw%3D%3D&numOfRows=44&pageNo=3&resultType=json"
-        ];
 
         var geocoder = new kakao.maps.services.Geocoder();
         var markers = [];
         var map;
-
-        var customMarkerImage = 'Parking.png';
-        var markerImage = new kakao.maps.MarkerImage(
-            customMarkerImage,
-            new kakao.maps.Size(70, 70),
-            {
-                offset: new kakao.maps.Point(15, 30) // 이미지의 중심을 표시할 위치 설정
-            }
-        );
+        var parkingMarkerImage = 'Images/Parking.png';
 
         function clearMarkers() {
             markers.forEach(marker => marker.setMap(null));
@@ -59,107 +59,7 @@
                 };
             map = new kakao.maps.Map(mapContainer, mapOption);
         }
-
-        function openWindowAndDisableButton() {
-            var button = document.getElementById('navBtn');
-            button.disabled = true;
-
-            var newWindow = window.open('https://map.kakao.com/link/to/35.13457,129.1031', '_blank');
-
-            var checkWindowClosed = setInterval(function () {
-                if (newWindow.closed) {
-                    clearInterval(checkWindowClosed);
-                    button.disabled = false;
-                }
-            }, 1000);
-        }
-
-        function addMarkersFromUrl(url, type) {
-            fetch(url)
-                .then(res => res.json())
-                .then(resJson => {
-                    var items = (type === 'illegal') ? resJson.getIlglWkstInfo.body.items.item : resJson.getPblcPrkngInfo.body.items.item;
-                    items.forEach(item => {
-                        var address = type === 'illegal' ? item.address : (item.doroAddr !== "-" ? item.doroAddr : item.jibunAddr);
-                        var name = type === 'illegal' ? "주정차 단속 위치" : item.pkNam;
-
-                        geocoder.addressSearch(address, function (result, status) {
-                            if (status === kakao.maps.services.Status.OK) {
-                                var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
-                                var marker = new kakao.maps.Marker({
-                                    map: map,
-                                    position: coords,
-                                    image: markerImage
-                                });
-                                markers.push(marker);
-
-                                var infoWindow = new kakao.maps.InfoWindow({
-                                    content: name
-                                });
-
-                                kakao.maps.event.addListener(marker, "click", mouseClickListener(map, marker, infoWindow));
-                                kakao.maps.event.addListener(marker, "mouseout", mouseOutListener(infoWindow));
-                            }
-                        });
-                    });
-                });
-        }
-
-        function mouseClickListener(map, marker, infoWindow) {
-            return function () {
-                infoWindow.open(map, marker);
-            };
-        }
-
-        function mouseOutListener(infoWindow) {
-            return function () {
-                infoWindow.close();
-            };
-        }
-
-        function toggleButtons() {
-            var buttons = ['illegalBtn', 'parkingBtn', 'clearBtn'];
-            buttons.forEach(id => {
-                var btn = document.getElementById(id);
-                btn.style.display = (btn.style.display === 'none') ? 'inline-block' : 'none';
-            });
-        }
-
-        function toggleButtonGroup() {
-            var divElement = document.getElementById('btnContainer');
-            if (divElement.style.display === 'none') {
-                divElement.style.display = 'block';
-            } else {
-                divElement.style.display = 'none';
-            }
-        }
-
-        document.getElementById('navBtn').addEventListener('click', () => {
-            document.getElementById('navBtn').disabled = true;
-            document.getElementById('illegalBtn').style.display = 'none';
-            document.getElementById('parkingBtn').style.display = 'none';
-            document.getElementById('clearBtn').style.display = 'none';
-        });
-
-        document.getElementById('moreBtn').addEventListener('click', () => {
-            if (!map) {
-                startMap();
-            }
-        });
-
-        document.getElementById('illegalBtn').addEventListener('click', () => {
-            clearMarkers();
-            addMarkersFromUrl(illegalUrl, 'illegal');
-        });
-
-        document.getElementById('parkingBtn').addEventListener('click', () => {
-            clearMarkers();
-            parkingUrls.forEach(url => addMarkersFromUrl(url, 'parking'));
-        });
-
-        document.getElementById('clearBtn').addEventListener('click', () => {
-            clearMarkers();
-        });
+        startMap();
     </script>
 </body>
 
