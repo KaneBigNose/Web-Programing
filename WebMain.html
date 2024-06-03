@@ -13,6 +13,7 @@
 
     <script src="JavaScript/Parking.js" defer></script>
     <script src="JavaScript/TopButtons.js" defer></script>
+    <script src="JavaScript/ParkingInfo.js" defer></script>
 
     <title>부산시 주정차 단속 및 공영 주차장 위치 표시</title>
 </head>
@@ -22,16 +23,16 @@
         <h1>부산시 주정차 단속 및 공영 주차장 위치 표시</h1>
     </div>
 
-    <div class="button-container">
+    <!-- <div class="button-container">
         <button id="navBtn" type="button" onclick="openWindowAndDisableButton();">네비게이션</button>
         <button id="moreBtn" type="button" onclick="toggleButtonGroup(); toggleButtons();">지도 + </button>
-    </div>
+    </div> -->
 
-    <div id="btnContainer" class="btn-container hidden" style="display: none;">
+    <div id="btnContainer" class="btn-container hidden">
         <div class="btn-group">
-            <button id="illegalBtn" class="hidden-btn" style="display: none;" disabled>주정차 단속 위치</button>
-            <button id="parkingBtn" class="hidden-btn" style="display: none;" onclick="toggleSelect();">공영 주차장 위치</button>
-            <button id="clearBtn" class="hidden-btn" style="display: none;" onclick="toggleSelect();" disabled>마커 지우기</button>
+            <button id="illegalBtn" class="hidden-btn" disabled>주정차 단속 위치</button>
+            <button id="parkingBtn" class="hidden-btn">공영 주차장 위치</button>
+            <button id="clearBtn" class="hidden-btn" onclick="toggleSelect(); clearBox2();" disabled>마커 지우기</button>
         </div>
     </div>
 
