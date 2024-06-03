@@ -1,0 +1,65 @@
+button {
+    width: 347px;
+    height: 40px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 10px;
+    cursor: default;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #1a4e1d;
+}
+
+.btn-group {
+    width: 690px;
+    height: 30px;
+
+    background-color: #4aff8f;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+#illegalBtn {
+    width: 221px;
+    height: 30px;
+    font-size: 12px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+#parkingBtn {
+    width: 221px;
+    height: 30px;
+    font-size: 12px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+#clearBtn {
+    width: 221px;
+    height: 30px;
+    font-size: 12px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+#illegalBtn:hover,
+#parkingBtn:hover,
+#clearBtn:hover {
+    background-color: rgb(165, 8, 8);
+}
+
+#navBtn,
+#moreBtn {
+    border: 2px solid black;
+}

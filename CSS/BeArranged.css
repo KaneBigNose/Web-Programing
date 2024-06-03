@@ -1,0 +1,68 @@
+.title-container {
+    text-align: center;
+    margin: 0px;
+}
+
+.button-container {
+    text-align: center;
+    margin: 0px;
+}
+
+#map {
+    width: 700px;
+    height: 450px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 2px solid black;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.hidden-btn {
+    margin: 5px;
+    border: 2px solid black;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+}
+
+.boxContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.box {
+    display: flex;
+    width: 700px;
+    border: 2px solid black;
+}
+
+.box1 {
+    height: 40px;
+    background-color: lightgray;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 0px;
+}
+
+.box2 {
+    height: 200px;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
