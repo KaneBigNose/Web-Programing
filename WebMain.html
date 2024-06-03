@@ -14,13 +14,14 @@
     <script src="JavaScript/Parking.js" defer></script>
     <script src="JavaScript/TopButtons.js" defer></script>
     <script src="JavaScript/ParkingInfo.js" defer></script>
+    <script src="JavaScript/CurrentLoc.js"defer ></script>
 
-    <title>부산시 주정차 단속 및 공영 주차장 위치 표시</title>
+    <title>부산시 주정차 금지구역 및 공영 주차장 위치 표시</title>
 </head>
 
 <body>
     <div class="title-container">
-        <h1>부산시 주정차 단속 및 공영 주차장 위치 표시</h1>
+        <h1>부산시 주정차 금지구역 및 공영 주차장 위치 표시</h1>
     </div>
 
     <!-- <div class="button-container">
@@ -30,7 +31,7 @@
 
     <div id="btnContainer" class="btn-container hidden">
         <div class="btn-group">
-            <button id="illegalBtn" class="hidden-btn" disabled>주정차 단속 위치</button>
+            <button id="illegalBtn" class="hidden-btn" disabled>주정차 금지구역</button>
             <button id="parkingBtn" class="hidden-btn">공영 주차장 위치</button>
             <button id="clearBtn" class="hidden-btn" onclick="toggleSelect(); clearBox2();" disabled>마커 지우기</button>
         </div>
@@ -55,14 +56,14 @@
             markers = [];
         }
 
-        function startMap() {
-            var mapContainer = document.getElementById('map'),
-                mapOption = {
-                    center: new kakao.maps.LatLng(35.13457, 129.1031),
-                    level: 3
-                };
-            map = new kakao.maps.Map(mapContainer, mapOption);
-        }
+        //function startMap() {
+        //    var mapContainer = document.getElementById('map'),
+        //        mapOption = {
+        //            center: new kakao.maps.LatLng(35.13457, 129.1031),
+        //            level: 3
+        //        };
+        //    map = new kakao.maps.Map(mapContainer, mapOption);
+        //}
 
         window.onload = function () {
             startMap();
