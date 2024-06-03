@@ -9,10 +9,10 @@
 
     <link rel="stylesheet" type="text/css" href="CSS/Buttons.css">
     <link rel="stylesheet" type="text/css" href="CSS/BeArranged.css">
+    <link rel="stylesheet" type="text/css" href="CSS/Boxes.css">
 
     <script src="JavaScript/Parking.js" defer></script>
     <script src="JavaScript/TopButtons.js" defer></script>
-    <script src="JavaScript/InfoBoxes.js"></script>
 
     <title>부산시 주정차 단속 및 공영 주차장 위치 표시</title>
 </head>
@@ -30,14 +30,17 @@
     <div id="btnContainer" class="btn-container hidden" style="display: none;">
         <div class="btn-group">
             <button id="illegalBtn" class="hidden-btn" style="display: none;" disabled>주정차 단속 위치</button>
-            <button id="parkingBtn" class="hidden-btn" style="display: none;">공영 주차장 위치</button>
-            <button id="clearBtn" class="hidden-btn" style="display: none;">마커 지우기</button>
+            <button id="parkingBtn" class="hidden-btn" style="display: none;" onclick="toggleSelect();">공영 주차장 위치</button>
+            <button id="clearBtn" class="hidden-btn" style="display: none;" onclick="toggleSelect();" disabled>마커 지우기</button>
         </div>
     </div>
 
-    <div class="map-container"><div id="map"></div></div>
+    <div class="map-container">
+        <div id="map"></div>
+    </div>
 
-    <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=ab20dd7e58d76f56e7c1af0c3c89152b&libraries=services,clusterer,drawing"></script>
+    <script type="text/javascript"
+        src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=ab20dd7e58d76f56e7c1af0c3c89152b&libraries=services,clusterer,drawing"></script>
     <script>
         const illegalUrl = 'https://apis.data.go.kr/6260000/BusanIlglWkstInfoService/getIlglWkstInfo?serviceKey=%2B9h%2BiNdRBhISq%2BfkcRcEXacYgP9rBOreEaMlS6GulIOg18rVyFYyqnJa4l8yBvHsHn860gZpbboSHpRtR5IFfw%3D%3D&numOfRows=1000&pageNo=1&resultType=json';
 
@@ -59,8 +62,15 @@
                 };
             map = new kakao.maps.Map(mapContainer, mapOption);
         }
-        startMap();
+
+        window.onload = function () {
+            startMap();
+        };
     </script>
+    <div class="boxContainer">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+    </div>
 </body>
 
 </html>
