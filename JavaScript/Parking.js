@@ -8,7 +8,7 @@ var markerImage1 = new kakao.maps.MarkerImage(
     parkingMarkerImage,
     new kakao.maps.Size(70, 70),
     {
-        offset: new kakao.maps.Point(15, 30) // 이미지의 중심을 표시할 위치 설정
+        offset: new kakao.maps.Point(15, 30) 
     }
 );
 
@@ -31,7 +31,7 @@ function addMarkersFromUrl(url, type) {
                         });
                         markers.push(marker);
 
-                        var content = '<div style="padding:10px;max-width:500px;overflow:auto;white-space:pre-wrap;word-wrap:break-word;">' + name + '</div>';
+                        var content = '<div style="padding:5px;max-width:500px;overflow:auto;white-space:pre-wrap;word-wrap:break-word;">' + name + '</div>';
 
                         var infoWindow = new kakao.maps.InfoWindow({
                             content: content

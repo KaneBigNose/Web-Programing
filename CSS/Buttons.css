@@ -26,7 +26,7 @@ button:hover {
 #illegalBtn {
     width: 221px;
     height: 30px;
-    font-size: 12px;
+    font-size: 16px;
     background-color: red;
     color: white;
     border-radius: 10px;
@@ -36,7 +36,7 @@ button:hover {
 #parkingBtn {
     width: 221px;
     height: 30px;
-    font-size: 12px;
+    font-size: 16px;
     background-color: red;
     color: white;
     border-radius: 10px;
@@ -46,7 +46,7 @@ button:hover {
 #clearBtn {
     width: 221px;
     height: 30px;
-    font-size: 12px;
+    font-size: 16px;
     background-color: red;
     color: white;
     border-radius: 10px;
@@ -59,7 +59,7 @@ button:hover {
     background-color: rgb(165, 8, 8);
 }
 
-#navBtn,
+/* #navBtn,
 #moreBtn {
     border: 2px solid black;
-}
+} */
