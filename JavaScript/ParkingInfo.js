@@ -1,9 +1,5 @@
+const box1 = document.querySelector('.box1')
 const box2 = document.querySelector('.box2');
-
-document.getElementById('parkingBtn').onclick = function () {
-    toggleSelect();
-    addParkingBoxes();
-};
 
 function toggleSelect() {
     var selectContainer = document.querySelector('.box1 select');
@@ -20,7 +16,7 @@ function toggleSelect() {
 }
 
 function addParkingBoxes() {
-    clearBox2();
+    addSubTitleBox2();
     for (let i = 0; i < 10; i++) {
         const newBox = document.createElement('div');
         newBox.className = 'inner-box';
@@ -30,7 +26,17 @@ function addParkingBoxes() {
 }
 
 function clearBox2() {
+    while (box1.firstChild) {
+        box1.removeChild(box1.firstChild);
+    }
     while (box2.firstChild) {
         box2.removeChild(box2.firstChild);
     }
+}
+
+function addSubTitleBox2() {
+    const newBox = document.createElement('div');
+    newBox.className = 'subtitle-box';
+    newBox.textContent = `공영 주차장 정보`;
+    box1.appendChild(newBox);
 }
