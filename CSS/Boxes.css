@@ -44,3 +44,11 @@ select {
     padding: 10px;
     box-sizing: border-box;
 }
+
+.subtitle-box {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    font-size: 24px;
+    margin: 0px;
+}
