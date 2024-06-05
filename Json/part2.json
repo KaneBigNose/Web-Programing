@@ -9,21 +9,6 @@
           "item": [
             {
               "jbYmd": "20240131",
-              "violTm": "1843",
-              "violPlcNm": "구포동 가람로52번길",
-              "violManSid1": "74",
-              "violManSid2": "2",
-              "rdnWhlAddr": "경상남도 밀양시 내이동",
-              "schoolZoneYn": "N",
-              "gpsX": "129.002540166667",
-              "gpsY": "35.2053831666667",
-              "carmeraNm": "1CarP",
-              "ctlType": "이동형CCTV단속",
-              "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240131",
               "violTm": "1839",
               "violPlcNm": "구포동 가람로",
               "violManSid1": "75",
@@ -35,7 +20,8 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "",
+              "address": "부산광역시 동래구 구포동 가람로"
             },
             {
               "jbYmd": "20240131",
@@ -50,22 +36,8 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240131",
-              "violTm": "1827",
-              "violPlcNm": "화명3동대우이안후문",
-              "violManSid1": "97",
-              "violManSid2": "1",
-              "rdnWhlAddr": "경상남도 김해시 외동",
-              "schoolZoneYn": "N",
-              "gpsX": "",
-              "gpsY": "",
-              "carmeraNm": "00000",
-              "ctlType": "고정형CCTV단속",
-              "guCode": "",
-              "guNam": ""
+              "guNam": "",
+              "address": "부산광역시 사상구 구포동 가람로"
             },
             {
               "jbYmd": "20240131",
@@ -80,7 +52,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 만덕동 904"
             },
             {
               "jbYmd": "20240131",
@@ -95,7 +67,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 화명3동 골든프라자"
             },
             {
               "jbYmd": "20240131",
@@ -110,7 +82,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 구포동 1160"
             },
             {
               "jbYmd": "20240131",
@@ -125,7 +97,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 구포동 936-11"
             },
             {
               "jbYmd": "20240131",
@@ -140,7 +112,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 구포시장"
             },
             {
               "jbYmd": "20240131",
@@ -155,22 +127,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240131",
-              "violTm": "1644",
-              "violPlcNm": "만덕동 덕천로",
-              "violManSid1": "13",
-              "violManSid2": "0",
-              "rdnWhlAddr": "경상남도 창원시 성산구 상남동",
-              "schoolZoneYn": "N",
-              "gpsX": "129.038801666667",
-              "gpsY": "35.2092911666667",
-              "carmeraNm": "1CarP",
-              "ctlType": "이동형CCTV단속",
-              "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 만덕동 904"
             },
             {
               "jbYmd": "20240131",
@@ -185,7 +142,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 만덕동 덕천로312번길"
             },
             {
               "jbYmd": "20240131",
@@ -200,37 +157,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240131",
-              "violTm": "1641",
-              "violPlcNm": "만덕동 상리로",
-              "violManSid1": "11",
-              "violManSid2": "2",
-              "rdnWhlAddr": "부산광역시 해운대구 우동",
-              "schoolZoneYn": "N",
-              "gpsX": "129.042092333333",
-              "gpsY": "35.2079863333333",
-              "carmeraNm": "1CarP",
-              "ctlType": "이동형CCTV단속",
-              "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240131",
-              "violTm": "1639",
-              "violPlcNm": "만덕동 은행나무로",
-              "violManSid1": "75",
-              "violManSid2": "1",
-              "rdnWhlAddr": "경상북도 의성군 단촌면 구계리",
-              "schoolZoneYn": "N",
-              "gpsX": "129.037835166667",
-              "gpsY": "35.2074448333333",
-              "carmeraNm": "1CarP",
-              "ctlType": "이동형CCTV단속",
-              "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 만덕동 상리로"
             },
             {
               "jbYmd": "20240131",
@@ -245,52 +172,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240131",
-              "violTm": "1638",
-              "violPlcNm": "만덕동 은행나무로",
-              "violManSid1": "64",
-              "violManSid2": "1",
-              "rdnWhlAddr": "부산광역시 동래구 온천동",
-              "schoolZoneYn": "N",
-              "gpsX": "129.037444833333",
-              "gpsY": "35.2086915",
-              "carmeraNm": "1CarP",
-              "ctlType": "이동형CCTV단속",
-              "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240131",
-              "violTm": "1638",
-              "violPlcNm": "만덕동 은행나무로",
-              "violManSid1": "56",
-              "violManSid2": "1",
-              "rdnWhlAddr": "부산광역시 북구 만덕동",
-              "schoolZoneYn": "N",
-              "gpsX": "129.037444833333",
-              "gpsY": "35.2087281666667",
-              "carmeraNm": "1CarP",
-              "ctlType": "이동형CCTV단속",
-              "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240131",
-              "violTm": "1638",
-              "violPlcNm": "만덕동 은행나무로",
-              "violManSid1": "74",
-              "violManSid2": "1",
-              "rdnWhlAddr": "경상남도 양산시 동면 석산리",
-              "schoolZoneYn": "N",
-              "gpsX": "129.0374595",
-              "gpsY": "35.2088466666667",
-              "carmeraNm": "1CarP",
-              "ctlType": "이동형CCTV단속",
-              "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 만덕동 은행나무로"
             },
             {
               "jbYmd": "20240131",
@@ -305,7 +187,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 덕천동 만덕대로127번길"
             },
             {
               "jbYmd": "20240131",
@@ -320,7 +202,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 덕천동 화명대로12번길"
             },
             {
               "jbYmd": "20240131",
@@ -335,22 +217,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240131",
-              "violTm": "1621",
-              "violPlcNm": "덕천동 419-18",
-              "violManSid1": "65",
-              "violManSid2": "1",
-              "rdnWhlAddr": "경상남도 양산시 덕계동",
-              "schoolZoneYn": "N",
-              "gpsX": "",
-              "gpsY": "",
-              "carmeraNm": "",
-              "ctlType": "스마트폰단속",
-              "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 만덕동 만덕3로48번길"
             },
             {
               "jbYmd": "20240131",
@@ -365,7 +232,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 화명동 2257"
             },
             {
               "jbYmd": "20240131",
@@ -380,67 +247,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240131",
-              "violTm": "1618",
-              "violPlcNm": "만덕동 만덕2로44번길",
-              "violManSid1": "68",
-              "violManSid2": "2",
-              "rdnWhlAddr": "부산광역시 북구 만덕동",
-              "schoolZoneYn": "N",
-              "gpsX": "129.036625666667",
-              "gpsY": "35.209975",
-              "carmeraNm": "1CarP",
-              "ctlType": "이동형CCTV단속",
-              "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240131",
-              "violTm": "1616",
-              "violPlcNm": "만덕동 만덕2로44번길",
-              "violManSid1": "53",
-              "violManSid2": "1",
-              "rdnWhlAddr": "부산광역시 북구 만덕동",
-              "schoolZoneYn": "N",
-              "gpsX": "129.033922333333",
-              "gpsY": "35.2107438333333",
-              "carmeraNm": "1CarP",
-              "ctlType": "이동형CCTV단속",
-              "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240131",
-              "violTm": "1615",
-              "violPlcNm": "만덕동 만덕2로44번길",
-              "violManSid1": "93",
-              "violManSid2": "1",
-              "rdnWhlAddr": "서울특별시 금천구 독산동",
-              "schoolZoneYn": "N",
-              "gpsX": "129.033662",
-              "gpsY": "35.210785",
-              "carmeraNm": "1CarP",
-              "ctlType": "이동형CCTV단속",
-              "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240131",
-              "violTm": "1556",
-              "violPlcNm": "화명3동 골든프라자 인근",
-              "violManSid1": "82",
-              "violManSid2": "2",
-              "rdnWhlAddr": "부산광역시 북구 화명동",
-              "schoolZoneYn": "N",
-              "gpsX": "",
-              "gpsY": "",
-              "carmeraNm": "00000",
-              "ctlType": "고정형CCTV단속",
-              "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 만덕동 만덕2로44번길"
             },
             {
               "jbYmd": "20240131",
@@ -455,7 +262,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 덕천2동다이소"
             },
             {
               "jbYmd": "20240131",
@@ -470,7 +277,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 만덕동 846-2"
             },
             {
               "jbYmd": "20240131",
@@ -485,7 +292,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 구포동 1076-2"
             },
             {
               "jbYmd": "20240131",
@@ -500,22 +307,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240131",
-              "violTm": "1445",
-              "violPlcNm": "화명동 화명대로12번길",
-              "violManSid1": "94",
-              "violManSid2": "2",
-              "rdnWhlAddr": "부산광역시 북구 화명동",
-              "schoolZoneYn": "N",
-              "gpsX": "129.009124",
-              "gpsY": "35.2322595",
-              "carmeraNm": "2CarP",
-              "ctlType": "이동형CCTV단속",
-              "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 화명동 화명대로12번길"
             },
             {
               "jbYmd": "20240131",
@@ -530,7 +322,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 구포동 가람로"
             },
             {
               "jbYmd": "20240131",
@@ -545,7 +337,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 화명3동롯데마트"
             },
             {
               "jbYmd": "20240131",
@@ -560,7 +352,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 화명동 금곡대로303번길"
             },
             {
               "jbYmd": "20240131",
@@ -575,7 +367,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 화명동 금곡대로303번길"
             },
             {
               "jbYmd": "20240131",
@@ -590,7 +382,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 화명중앙공원"
             },
             {
               "jbYmd": "20240131",
@@ -605,37 +397,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240131",
-              "violTm": "1401",
-              "violPlcNm": "금곡동 효열로203번길",
-              "violManSid1": "65",
-              "violManSid2": "1",
-              "rdnWhlAddr": "부산광역시 북구 만덕동",
-              "schoolZoneYn": "N",
-              "gpsX": "129.017576833333",
-              "gpsY": "35.2629716666667",
-              "carmeraNm": "2CarP",
-              "ctlType": "이동형CCTV단속",
-              "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240131",
-              "violTm": "1401",
-              "violPlcNm": "금곡동 효열로203번길",
-              "violManSid1": "00",
-              "violManSid2": "4",
-              "rdnWhlAddr": "경상남도 양산시 동면 금산리",
-              "schoolZoneYn": "N",
-              "gpsX": "129.016870166667",
-              "gpsY": "35.2630346666667",
-              "carmeraNm": "2CarP",
-              "ctlType": "이동형CCTV단속",
-              "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 금곡동 효열로203번길"
             },
             {
               "jbYmd": "20240131",
@@ -650,7 +412,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 덕천동 의성로128번길"
             },
             {
               "jbYmd": "20240131",
@@ -665,7 +427,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 덕천동 의성로122번길"
             },
             {
               "jbYmd": "20240131",
@@ -680,52 +442,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240131",
-              "violTm": "1351",
-              "violPlcNm": "덕천동 덕천2길",
-              "violManSid1": "89",
-              "violManSid2": "1",
-              "rdnWhlAddr": "부산광역시 연제구 연산동",
-              "schoolZoneYn": "N",
-              "gpsX": "129.008760166667",
-              "gpsY": "35.209792",
-              "carmeraNm": "1CarP",
-              "ctlType": "이동형CCTV단속",
-              "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240131",
-              "violTm": "1351",
-              "violPlcNm": "덕천동 덕천2길",
-              "violManSid1": "11",
-              "violManSid2": "2",
-              "rdnWhlAddr": "부산광역시 해운대구 우동",
-              "schoolZoneYn": "N",
-              "gpsX": "129.008711666667",
-              "gpsY": "35.2097776666667",
-              "carmeraNm": "1CarP",
-              "ctlType": "이동형CCTV단속",
-              "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240131",
-              "violTm": "1350",
-              "violPlcNm": "덕천동 덕천2길",
-              "violManSid1": "70",
-              "violManSid2": "1",
-              "rdnWhlAddr": "부산광역시 북구 덕천동",
-              "schoolZoneYn": "N",
-              "gpsX": "129.007640166667",
-              "gpsY": "35.2094415",
-              "carmeraNm": "1CarP",
-              "ctlType": "이동형CCTV단속",
-              "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 덕천동 덕천2길"
             },
             {
               "jbYmd": "20240131",
@@ -740,22 +457,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240131",
-              "violTm": "1347",
-              "violPlcNm": "덕천동 만덕대로28번길",
-              "violManSid1": "94",
-              "violManSid2": "1",
-              "rdnWhlAddr": "전라남도 광양시 광양읍 덕례리",
-              "schoolZoneYn": "N",
-              "gpsX": "129.008447333333",
-              "gpsY": "35.2098246666667",
-              "carmeraNm": "1CarP",
-              "ctlType": "이동형CCTV단속",
-              "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 덕천동 만덕대로28번길"
             },
             {
               "jbYmd": "20240131",
@@ -770,7 +472,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 구포동 1144-19"
             },
             {
               "jbYmd": "20240131",
@@ -785,7 +487,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 화명3동롯데마트"
             },
             {
               "jbYmd": "20240131",
@@ -800,7 +502,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 만덕동 904"
             },
             {
               "jbYmd": "20240131",
@@ -815,7 +517,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 화명동 양달로4번길"
             },
             {
               "jbYmd": "20240131",
@@ -830,7 +532,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 화명동 대천천길"
             },
             {
               "jbYmd": "20240131",
@@ -845,7 +547,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 구포동 1060-411"
             },
             {
               "jbYmd": "20240131",
@@ -860,7 +562,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 만덕3동현대아파트"
             },
             {
               "jbYmd": "20240131",
@@ -875,22 +577,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240131",
-              "violTm": "1019",
-              "violPlcNm": "덕천동 금곡대로",
-              "violManSid1": "77",
-              "violManSid2": "1",
-              "rdnWhlAddr": "부산광역시 강서구 명지동",
-              "schoolZoneYn": "N",
-              "gpsX": "129.007732333333",
-              "gpsY": "35.2201378333333",
-              "carmeraNm": "2CarP",
-              "ctlType": "이동형CCTV단속",
-              "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 덕천동 금곡대로"
             },
             {
               "jbYmd": "20240131",
@@ -905,7 +592,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 덕천동 의성로"
             },
             {
               "jbYmd": "20240131",
@@ -920,22 +607,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240131",
-              "violTm": "1003",
-              "violPlcNm": "만덕3동현대아파트앞",
-              "violManSid1": "11",
-              "violManSid2": "7",
-              "rdnWhlAddr": "경기도 시흥시 배곧동",
-              "schoolZoneYn": "N",
-              "gpsX": "",
-              "gpsY": "",
-              "carmeraNm": "00000",
-              "ctlType": "고정형CCTV단속",
-              "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 덕천동 금곡대로46번길"
             },
             {
               "jbYmd": "20240131",
@@ -950,7 +622,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 구포동 낙동대로1724번길"
             },
             {
               "jbYmd": "20240131",
@@ -965,7 +637,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 구포동 구포만세길"
             },
             {
               "jbYmd": "20240131",
@@ -980,7 +652,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 모라동 백양대로"
             },
             {
               "jbYmd": "20240131",
@@ -995,7 +667,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 구포동 백양대로1015번길"
             },
             {
               "jbYmd": "20240131",
@@ -1010,7 +682,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 만덕2동 신만덕 사거리"
             },
             {
               "jbYmd": "20240131",
@@ -1025,7 +697,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 덕천동 561-1"
             },
             {
               "jbYmd": "20240131",
@@ -1040,7 +712,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 구포동 1286"
             },
             {
               "jbYmd": "20240131",
@@ -1055,7 +727,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 덕천동 797"
             },
             {
               "jbYmd": "20240130",
@@ -1070,7 +742,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 덕천동 458"
             },
             {
               "jbYmd": "20240130",
@@ -1085,7 +757,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 구포2동경부선구포역"
             },
             {
               "jbYmd": "20240130",
@@ -1100,7 +772,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 화명중앙공원"
             },
             {
               "jbYmd": "20240130",
@@ -1115,7 +787,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 화명3동코오롱2차"
             },
             {
               "jbYmd": "20240130",
@@ -1130,7 +802,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 덕천동 50-22"
             },
             {
               "jbYmd": "20240130",
@@ -1145,7 +817,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 화명3동 장미공원"
             },
             {
               "jbYmd": "20240130",
@@ -1160,7 +832,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 화명3동롯데마트"
             },
             {
               "jbYmd": "20240130",
@@ -1175,7 +847,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 구포2동경부선구포역"
             },
             {
               "jbYmd": "20240130",
@@ -1190,7 +862,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 백양디이스트"
             },
             {
               "jbYmd": "20240130",
@@ -1205,7 +877,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 화명동 2275-6"
             },
             {
               "jbYmd": "20240130",
@@ -1220,7 +892,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 화명중앙공원"
             },
             {
               "jbYmd": "20240130",
@@ -1235,7 +907,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 구포3동홍삼당약국"
             },
             {
               "jbYmd": "20240130",
@@ -1250,7 +922,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 화명동 2257"
             },
             {
               "jbYmd": "20240130",
@@ -1265,7 +937,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 화명중앙공원"
             },
             {
               "jbYmd": "20240130",
@@ -1280,7 +952,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 만덕동 903"
             },
             {
               "jbYmd": "20240130",
@@ -1295,7 +967,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 화명중앙공원"
             },
             {
               "jbYmd": "20240130",
@@ -1310,22 +982,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240130",
-              "violTm": "2005",
-              "violPlcNm": "화명중앙공원인근",
-              "violManSid1": "99",
-              "violManSid2": "1",
-              "rdnWhlAddr": "경상남도 창원시 마산합포구 교방동",
-              "schoolZoneYn": "N",
-              "gpsX": "",
-              "gpsY": "",
-              "carmeraNm": "00000",
-              "ctlType": "고정형CCTV단속",
-              "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 구포2동경부선구포역"
             },
             {
               "jbYmd": "20240130",
@@ -1340,7 +997,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 화명3동롯데마트"
             },
             {
               "jbYmd": "20240130",
@@ -1355,7 +1012,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 화명동 2070-5"
             },
             {
               "jbYmd": "20240130",
@@ -1370,7 +1027,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 덕천동 기찰로"
             },
             {
               "jbYmd": "20240130",
@@ -1385,7 +1042,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 덕천동 만덕대로39번길"
             },
             {
               "jbYmd": "20240130",
@@ -1400,7 +1057,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 덕천동 만덕대로27번길"
             },
             {
               "jbYmd": "20240130",
@@ -1415,52 +1072,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240130",
-              "violTm": "1940",
-              "violPlcNm": "화명3동롯데마트앞",
-              "violManSid1": "68",
-              "violManSid2": "2",
-              "rdnWhlAddr": "부산광역시 연제구 연산동",
-              "schoolZoneYn": "N",
-              "gpsX": "",
-              "gpsY": "",
-              "carmeraNm": "00000",
-              "ctlType": "고정형CCTV단속",
-              "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240130",
-              "violTm": "1918",
-              "violPlcNm": "화명중앙공원인근",
-              "violManSid1": "18",
-              "violManSid2": "0",
-              "rdnWhlAddr": "부산광역시 영도구 청학동",
-              "schoolZoneYn": "N",
-              "gpsX": "",
-              "gpsY": "",
-              "carmeraNm": "00000",
-              "ctlType": "고정형CCTV단속",
-              "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240130",
-              "violTm": "1908",
-              "violPlcNm": "화명중앙공원인근",
-              "violManSid1": "67",
-              "violManSid2": "1",
-              "rdnWhlAddr": "부산광역시 해운대구 반여동",
-              "schoolZoneYn": "N",
-              "gpsX": "",
-              "gpsY": "",
-              "carmeraNm": "00000",
-              "ctlType": "고정형CCTV단속",
-              "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 구포동 1198-18"
             },
             {
               "jbYmd": "20240130",
@@ -1475,22 +1087,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240130",
-              "violTm": "1855",
-              "violPlcNm": "화명중앙공원인근",
-              "violManSid1": "18",
-              "violManSid2": "0",
-              "rdnWhlAddr": "경상남도 양산시 유산동",
-              "schoolZoneYn": "N",
-              "gpsX": "",
-              "gpsY": "",
-              "carmeraNm": "00000",
-              "ctlType": "고정형CCTV단속",
-              "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 덕천동 덕천2길"
             },
             {
               "jbYmd": "20240130",
@@ -1505,37 +1102,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240130",
-              "violTm": "1855",
-              "violPlcNm": "덕천동 의성로122번길",
-              "violManSid1": "98",
-              "violManSid2": "1",
-              "rdnWhlAddr": "부산광역시 북구 덕천동",
-              "schoolZoneYn": "N",
-              "gpsX": "129.0095965",
-              "gpsY": "35.2094313333333",
-              "carmeraNm": "1CarP",
-              "ctlType": "이동형CCTV단속",
-              "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240130",
-              "violTm": "1855",
-              "violPlcNm": "덕천동 의성로122번길",
-              "violManSid1": "19",
-              "violManSid2": "0",
-              "rdnWhlAddr": "경상남도 김해시 주촌면",
-              "schoolZoneYn": "N",
-              "gpsX": "129.009262666667",
-              "gpsY": "35.2093423333333",
-              "carmeraNm": "1CarP",
-              "ctlType": "이동형CCTV단속",
-              "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 덕천동 의성로122번길"
             },
             {
               "jbYmd": "20240130",
@@ -1550,7 +1117,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 덕천동 만덕대로40번길"
             },
             {
               "jbYmd": "20240130",
@@ -1565,7 +1132,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 화명동 1375-1"
             },
             {
               "jbYmd": "20240130",
@@ -1580,7 +1147,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 만덕2동 신만덕"
             },
             {
               "jbYmd": "20240130",
@@ -1595,7 +1162,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 구포동 1172"
             },
             {
               "jbYmd": "20240130",
@@ -1610,7 +1177,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 화명3동 장미공원"
             },
             {
               "jbYmd": "20240130",
@@ -1625,7 +1192,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 구포동 1063-2"
             },
             {
               "jbYmd": "20240130",
@@ -1640,7 +1207,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 구포동 451-4"
             },
             {
               "jbYmd": "20240130",
@@ -1655,7 +1222,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 구포동 1269-1"
             },
             {
               "jbYmd": "20240130",
@@ -1670,7 +1237,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 구포3동홍삼당약국"
             },
             {
               "jbYmd": "20240130",
@@ -1685,22 +1252,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240130",
-              "violTm": "1652",
-              "violPlcNm": "화명3동 장미공원",
-              "violManSid1": "51",
-              "violManSid2": "1",
-              "rdnWhlAddr": "부산광역시 북구 화명동",
-              "schoolZoneYn": "N",
-              "gpsX": "",
-              "gpsY": "",
-              "carmeraNm": "00000",
-              "ctlType": "고정형CCTV단속",
-              "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 덕천동 기찰로"
             },
             {
               "jbYmd": "20240130",
@@ -1715,7 +1267,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 구포동 916-1"
             },
             {
               "jbYmd": "20240130",
@@ -1730,22 +1282,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240130",
-              "violTm": "1640",
-              "violPlcNm": "구포시장 버스전용 승강",
-              "violManSid1": "66",
-              "violManSid2": "1",
-              "rdnWhlAddr": "부산광역시 북구 구포동",
-              "schoolZoneYn": "N",
-              "gpsX": "",
-              "gpsY": "",
-              "carmeraNm": "00000",
-              "ctlType": "고정형CCTV단속",
-              "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 만덕동 덕천로294번길"
             },
             {
               "jbYmd": "20240130",
@@ -1760,7 +1297,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 화명동 745"
             },
             {
               "jbYmd": "20240130",
@@ -1775,7 +1312,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 화명동 1261-4"
             },
             {
               "jbYmd": "20240130",
@@ -1790,22 +1327,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240130",
-              "violTm": "1617",
-              "violPlcNm": "화명3동롯데마트뒤",
-              "violManSid1": "61",
-              "violManSid2": "2",
-              "rdnWhlAddr": "부산광역시 북구 화명동",
-              "schoolZoneYn": "N",
-              "gpsX": "",
-              "gpsY": "",
-              "carmeraNm": "00000",
-              "ctlType": "고정형CCTV단속",
-              "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 금곡동 금곡대로"
             },
             {
               "jbYmd": "20240130",
@@ -1820,7 +1342,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 금곡동 금곡대로"
             },
             {
               "jbYmd": "20240130",
@@ -1835,7 +1357,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 덕천동 462"
             },
             {
               "jbYmd": "20240130",
@@ -1850,7 +1372,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 구포동 백양대로1016번가"
             },
             {
               "jbYmd": "20240130",
@@ -1865,22 +1387,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240130",
-              "violTm": "1539",
-              "violPlcNm": "만덕2동 신만덕 사거리",
-              "violManSid1": "59",
-              "violManSid2": "1",
-              "rdnWhlAddr": "부산광역시 동래구 온천동",
-              "schoolZoneYn": "N",
-              "gpsX": "",
-              "gpsY": "",
-              "carmeraNm": "00000",
-              "ctlType": "고정형CCTV단속",
-              "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 만덕동 955"
             },
             {
               "jbYmd": "20240130",
@@ -1895,7 +1402,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 화명동 2257"
             },
             {
               "jbYmd": "20240130",
@@ -1910,22 +1417,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240130",
-              "violTm": "1448",
-              "violPlcNm": "화명동 화명대로",
-              "violManSid1": "18",
-              "violManSid2": "0",
-              "rdnWhlAddr": "부산광역시 강서구 미음동",
-              "schoolZoneYn": "N",
-              "gpsX": "129.010538166667",
-              "gpsY": "35.2350931666667",
-              "carmeraNm": "2CarP",
-              "ctlType": "이동형CCTV단속",
-              "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 화명동 화명대로"
             },
             {
               "jbYmd": "20240130",
@@ -1940,7 +1432,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 덕천동 의성로122번길"
             },
             {
               "jbYmd": "20240130",
@@ -1955,7 +1447,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 덕천동 덕천1길"
             },
             {
               "jbYmd": "20240130",
@@ -1970,7 +1462,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 화명동 화명신도시로69번"
             },
             {
               "jbYmd": "20240130",
@@ -1985,37 +1477,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240130",
-              "violTm": "1434",
-              "violPlcNm": "화명동 금곡대로285번길",
-              "violManSid1": "63",
-              "violManSid2": "2",
-              "rdnWhlAddr": "부산광역시 사상구 모라동",
-              "schoolZoneYn": "N",
-              "gpsX": "129.009098166667",
-              "gpsY": "35.2343391666667",
-              "carmeraNm": "2CarP",
-              "ctlType": "이동형CCTV단속",
-              "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240130",
-              "violTm": "1434",
-              "violPlcNm": "화명동 금곡대로285번길",
-              "violManSid1": "92",
-              "violManSid2": "1",
-              "rdnWhlAddr": "경상남도 양산시 물금읍 가촌리",
-              "schoolZoneYn": "N",
-              "gpsX": "129.010168666667",
-              "gpsY": "35.2342058333333",
-              "carmeraNm": "2CarP",
-              "ctlType": "이동형CCTV단속",
-              "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 화명동 금곡대로285번길"
             },
             {
               "jbYmd": "20240130",
@@ -2030,7 +1492,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 만덕3그린코아"
             },
             {
               "jbYmd": "20240130",
@@ -2045,7 +1507,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 덕천안경"
             },
             {
               "jbYmd": "20240130",
@@ -2060,52 +1522,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240130",
-              "violTm": "1405",
-              "violPlcNm": "구포동 낙동대로1780번길",
-              "violManSid1": "47",
-              "violManSid2": "1",
-              "rdnWhlAddr": "부산광역시 강서구 강동동",
-              "schoolZoneYn": "N",
-              "gpsX": "129.004653",
-              "gpsY": "35.2073871666667",
-              "carmeraNm": "1CarP",
-              "ctlType": "이동형CCTV단속",
-              "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240130",
-              "violTm": "1405",
-              "violPlcNm": "구포동 낙동대로1780번길",
-              "violManSid1": "55",
-              "violManSid2": "1",
-              "rdnWhlAddr": "부산광역시 북구 덕천동",
-              "schoolZoneYn": "N",
-              "gpsX": "129.004583333333",
-              "gpsY": "35.207123",
-              "carmeraNm": "1CarP",
-              "ctlType": "이동형CCTV단속",
-              "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240130",
-              "violTm": "1403",
-              "violPlcNm": "구포동 낙동대로1780번길",
-              "violManSid1": "71",
-              "violManSid2": "2",
-              "rdnWhlAddr": "부산광역시 북구 구포동",
-              "schoolZoneYn": "N",
-              "gpsX": "129.003651666667",
-              "gpsY": "35.2055301666667",
-              "carmeraNm": "1CarP",
-              "ctlType": "이동형CCTV단속",
-              "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 구포동 낙동대로1780번길"
             },
             {
               "jbYmd": "20240130",
@@ -2120,7 +1537,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 덕천동 금곡대로8번길"
             },
             {
               "jbYmd": "20240130",
@@ -2135,7 +1552,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 구포동 가람로52번길"
             },
             {
               "jbYmd": "20240130",
@@ -2150,7 +1567,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 구포동 낙동대로1762번길"
             },
             {
               "jbYmd": "20240130",
@@ -2165,7 +1582,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 덕천동 만덕대로39번길"
             },
             {
               "jbYmd": "20240130",
@@ -2180,7 +1597,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 덕천동 기찰로"
             },
             {
               "jbYmd": "20240130",
@@ -2195,7 +1612,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 만덕동 904"
             },
             {
               "jbYmd": "20240130",
@@ -2210,7 +1627,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 만덕동 598-6"
             },
             {
               "jbYmd": "20240130",
@@ -2225,52 +1642,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240130",
-              "violTm": "1101",
-              "violPlcNm": "화명동 대천천길",
-              "violManSid1": "57",
-              "violManSid2": "1",
-              "rdnWhlAddr": "부산광역시 북구 금곡동",
-              "schoolZoneYn": "N",
-              "gpsX": "129.014930833333",
-              "gpsY": "35.2402445",
-              "carmeraNm": "2CarP",
-              "ctlType": "이동형CCTV단속",
-              "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240130",
-              "violTm": "1049",
-              "violPlcNm": "화명중앙공원인근",
-              "violManSid1": "74",
-              "violManSid2": "1",
-              "rdnWhlAddr": "부산광역시 북구 화명동",
-              "schoolZoneYn": "N",
-              "gpsX": "",
-              "gpsY": "",
-              "carmeraNm": "00000",
-              "ctlType": "고정형CCTV단속",
-              "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240130",
-              "violTm": "1048",
-              "violPlcNm": "구포시장 버스전용 승강",
-              "violManSid1": "60",
-              "violManSid2": "1",
-              "rdnWhlAddr": "부산광역시 북구 구포동",
-              "schoolZoneYn": "N",
-              "gpsX": "",
-              "gpsY": "",
-              "carmeraNm": "00000",
-              "ctlType": "고정형CCTV단속",
-              "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 화명동 대천천길"
             },
             {
               "jbYmd": "20240130",
@@ -2285,7 +1657,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 구포시장쌈지공원"
             },
             {
               "jbYmd": "20240130",
@@ -2300,7 +1672,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 화명동 1718-7"
             },
             {
               "jbYmd": "20240130",
@@ -2315,22 +1687,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240130",
-              "violTm": "1035",
-              "violPlcNm": "구포동 시랑로79번길",
-              "violManSid1": "54",
-              "violManSid2": "1",
-              "rdnWhlAddr": "부산광역시 강서구 대저1동",
-              "schoolZoneYn": "N",
-              "gpsX": "129.007546833333",
-              "gpsY": "35.1984776666667",
-              "carmeraNm": "1CarP",
-              "ctlType": "이동형CCTV단속",
-              "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 구포동 시랑로79번길"
             },
             {
               "jbYmd": "20240130",
@@ -2345,37 +1702,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240130",
-              "violTm": "1024",
-              "violPlcNm": "화명동 화명대로",
-              "violManSid1": "18",
-              "violManSid2": "0",
-              "rdnWhlAddr": "부산광역시 해운대구 재송동",
-              "schoolZoneYn": "N",
-              "gpsX": "129.0092975",
-              "gpsY": "35.2353171666667",
-              "carmeraNm": "2CarP",
-              "ctlType": "이동형CCTV단속",
-              "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240130",
-              "violTm": "1024",
-              "violPlcNm": "화명동 화명대로",
-              "violManSid1": "88",
-              "violManSid2": "1",
-              "rdnWhlAddr": "울산광역시 남구 무거동",
-              "schoolZoneYn": "N",
-              "gpsX": "129.010170166667",
-              "gpsY": "35.235154",
-              "carmeraNm": "2CarP",
-              "ctlType": "이동형CCTV단속",
-              "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 구포동 시랑로114번길"
             },
             {
               "jbYmd": "20240130",
@@ -2390,7 +1717,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 구포동 시랑로132번길"
             },
             {
               "jbYmd": "20240130",
@@ -2405,7 +1732,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 금정산 더 래디언트 102"
             },
             {
               "jbYmd": "20240130",
@@ -2420,22 +1747,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240130",
-              "violTm": "0957",
-              "violPlcNm": "만덕2동 신만덕 사거리",
-              "violManSid1": "46",
-              "violManSid2": "1",
-              "rdnWhlAddr": "부산광역시 북구 만덕동",
-              "schoolZoneYn": "N",
-              "gpsX": "",
-              "gpsY": "",
-              "carmeraNm": "00000",
-              "ctlType": "고정형CCTV단속",
-              "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 화명3동 삼한골든뷰"
             },
             {
               "jbYmd": "20240130",
@@ -2450,7 +1762,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 덕천동 의성로"
             },
             {
               "jbYmd": "20240130",
@@ -2465,7 +1777,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 덕천동 의성로"
             },
             {
               "jbYmd": "20240130",
@@ -2480,7 +1792,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 덕천동 금곡대로"
             },
             {
               "jbYmd": "20240130",
@@ -2495,22 +1807,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
-            },
-            {
-              "jbYmd": "20240130",
-              "violTm": "0950",
-              "violPlcNm": "화명3동롯데마트앞",
-              "violManSid1": "63",
-              "violManSid2": "1",
-              "rdnWhlAddr": "부산광역시 북구 화명동",
-              "schoolZoneYn": "N",
-              "gpsX": "",
-              "gpsY": "",
-              "carmeraNm": "00000",
-              "ctlType": "고정형CCTV단속",
-              "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 구포동 백양대로1015번길"
             },
             {
               "jbYmd": "20240130",
@@ -2525,7 +1822,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 구포동 구남로"
             },
             {
               "jbYmd": "20240130",
@@ -2540,7 +1837,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 구포동 구남로14번길"
             },
             {
               "jbYmd": "20240130",
@@ -2555,7 +1852,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시 화명3동코오롱2차"
             },
             {
               "jbYmd": "20240130",
@@ -2570,7 +1867,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240130",
@@ -2585,7 +1882,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240130",
@@ -2600,7 +1897,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240130",
@@ -2615,7 +1912,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240130",
@@ -2630,7 +1927,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240130",
@@ -2645,7 +1942,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240130",
@@ -2660,7 +1957,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -2675,7 +1972,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -2690,7 +1987,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -2705,7 +2002,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -2720,7 +2017,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -2735,7 +2032,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -2750,7 +2047,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -2765,7 +2062,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -2780,7 +2077,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -2795,7 +2092,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -2810,7 +2107,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -2825,7 +2122,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -2840,7 +2137,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -2855,7 +2152,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -2870,7 +2167,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -2885,7 +2182,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -2900,7 +2197,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -2915,7 +2212,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -2930,7 +2227,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -2945,7 +2242,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -2960,7 +2257,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -2975,7 +2272,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -2990,7 +2287,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3005,7 +2302,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3020,7 +2317,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3035,7 +2332,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3050,7 +2347,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3065,7 +2362,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3080,7 +2377,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3095,7 +2392,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3110,7 +2407,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3125,7 +2422,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3140,7 +2437,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3155,7 +2452,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3170,7 +2467,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3185,7 +2482,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3200,7 +2497,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3215,7 +2512,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3230,7 +2527,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3245,7 +2542,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3260,7 +2557,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3275,7 +2572,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3290,7 +2587,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3305,7 +2602,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3320,7 +2617,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3335,7 +2632,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3350,7 +2647,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3365,7 +2662,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3380,7 +2677,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3395,7 +2692,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3410,7 +2707,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3425,7 +2722,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3440,7 +2737,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3455,7 +2752,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3470,7 +2767,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3485,7 +2782,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3500,7 +2797,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3515,7 +2812,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3530,7 +2827,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3545,7 +2842,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3560,7 +2857,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3575,7 +2872,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3590,7 +2887,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3605,7 +2902,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3620,7 +2917,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3635,7 +2932,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3650,7 +2947,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3665,7 +2962,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3680,7 +2977,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3695,7 +2992,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3710,7 +3007,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3725,7 +3022,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3740,7 +3037,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3755,7 +3052,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3770,7 +3067,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3785,7 +3082,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3800,7 +3097,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3815,7 +3112,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3830,7 +3127,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3845,7 +3142,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3860,7 +3157,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3875,7 +3172,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3890,7 +3187,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3905,7 +3202,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3920,7 +3217,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3935,7 +3232,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3950,7 +3247,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3965,7 +3262,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3980,7 +3277,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -3995,7 +3292,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4010,7 +3307,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4025,7 +3322,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4040,7 +3337,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4055,7 +3352,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4070,7 +3367,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4085,7 +3382,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4100,7 +3397,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4115,7 +3412,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4130,7 +3427,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4145,7 +3442,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4160,7 +3457,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4175,7 +3472,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4190,7 +3487,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4205,7 +3502,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4220,7 +3517,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4235,7 +3532,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4250,7 +3547,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4265,7 +3562,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4280,7 +3577,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4295,7 +3592,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4310,7 +3607,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4325,7 +3622,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4340,7 +3637,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4355,7 +3652,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4370,7 +3667,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4385,7 +3682,7 @@
               "carmeraNm": "2CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4400,7 +3697,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4415,7 +3712,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4430,7 +3727,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4445,7 +3742,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4460,7 +3757,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4475,7 +3772,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4490,7 +3787,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4505,7 +3802,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4520,7 +3817,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4535,7 +3832,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4550,7 +3847,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240129",
@@ -4565,7 +3862,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -4580,7 +3877,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -4595,7 +3892,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -4610,7 +3907,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -4625,7 +3922,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -4640,7 +3937,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -4655,7 +3952,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -4670,7 +3967,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -4685,7 +3982,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -4700,7 +3997,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -4715,7 +4012,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -4730,7 +4027,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -4745,7 +4042,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -4760,7 +4057,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -4775,7 +4072,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -4790,7 +4087,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -4805,7 +4102,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -4820,7 +4117,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -4835,7 +4132,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -4850,7 +4147,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -4865,7 +4162,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -4880,7 +4177,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -4895,7 +4192,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -4910,7 +4207,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -4925,7 +4222,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -4940,7 +4237,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -4955,7 +4252,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -4970,7 +4267,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -4985,7 +4282,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5000,7 +4297,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5015,7 +4312,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5030,7 +4327,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5045,7 +4342,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5060,7 +4357,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5075,7 +4372,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5090,7 +4387,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5105,7 +4402,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5120,7 +4417,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5135,7 +4432,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5150,7 +4447,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5165,7 +4462,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5180,7 +4477,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5195,7 +4492,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5210,7 +4507,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5225,7 +4522,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5240,7 +4537,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5255,7 +4552,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5270,7 +4567,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5285,7 +4582,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5300,7 +4597,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5315,7 +4612,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5330,7 +4627,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5345,7 +4642,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5360,7 +4657,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5375,7 +4672,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5390,7 +4687,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5405,7 +4702,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5420,7 +4717,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5435,7 +4732,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5450,7 +4747,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5465,7 +4762,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5480,7 +4777,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5495,7 +4792,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5510,7 +4807,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5525,7 +4822,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5540,7 +4837,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5555,7 +4852,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5570,7 +4867,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5585,7 +4882,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5600,7 +4897,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5615,7 +4912,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5630,7 +4927,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5645,7 +4942,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5660,7 +4957,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5675,7 +4972,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5690,7 +4987,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5705,7 +5002,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5720,7 +5017,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5735,7 +5032,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240128",
@@ -5750,7 +5047,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -5765,7 +5062,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -5780,7 +5077,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -5795,7 +5092,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -5810,7 +5107,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -5825,7 +5122,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -5840,7 +5137,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -5855,7 +5152,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -5870,7 +5167,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -5885,7 +5182,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -5900,7 +5197,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -5915,7 +5212,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -5930,7 +5227,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -5945,7 +5242,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -5960,7 +5257,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -5975,7 +5272,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -5990,7 +5287,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6005,7 +5302,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6020,7 +5317,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6035,7 +5332,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6050,7 +5347,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6065,7 +5362,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6080,7 +5377,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6095,7 +5392,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6110,7 +5407,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6125,7 +5422,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6140,7 +5437,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6155,7 +5452,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6170,7 +5467,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6185,7 +5482,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6200,7 +5497,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6215,7 +5512,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6230,7 +5527,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6245,7 +5542,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6260,7 +5557,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6275,7 +5572,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6290,7 +5587,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6305,7 +5602,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6320,7 +5617,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6335,7 +5632,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6350,7 +5647,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6365,7 +5662,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6380,7 +5677,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6395,7 +5692,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6410,7 +5707,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6425,7 +5722,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6440,7 +5737,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6455,7 +5752,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6470,7 +5767,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6485,7 +5782,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6500,7 +5797,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6515,7 +5812,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6530,7 +5827,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6545,7 +5842,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6560,7 +5857,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6575,7 +5872,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6590,7 +5887,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6605,7 +5902,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6620,7 +5917,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6635,7 +5932,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6650,7 +5947,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6665,7 +5962,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6680,7 +5977,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6695,7 +5992,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6710,7 +6007,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6725,7 +6022,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6740,7 +6037,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6755,7 +6052,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6770,7 +6067,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6785,7 +6082,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6800,7 +6097,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6815,7 +6112,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6830,7 +6127,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6845,7 +6142,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6860,7 +6157,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6875,7 +6172,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6890,7 +6187,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6905,7 +6202,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6920,7 +6217,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6935,7 +6232,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6950,7 +6247,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6965,7 +6262,7 @@
               "carmeraNm": "1CarP",
               "ctlType": "이동형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6980,7 +6277,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -6995,7 +6292,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -7010,7 +6307,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -7025,7 +6322,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -7040,7 +6337,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -7055,7 +6352,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -7070,7 +6367,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -7085,7 +6382,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240127",
@@ -7100,7 +6397,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240126",
@@ -7115,7 +6412,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240126",
@@ -7130,7 +6427,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240126",
@@ -7145,7 +6442,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240126",
@@ -7160,7 +6457,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240126",
@@ -7175,7 +6472,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240126",
@@ -7190,7 +6487,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240126",
@@ -7205,7 +6502,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240126",
@@ -7220,7 +6517,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240126",
@@ -7235,7 +6532,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240126",
@@ -7250,7 +6547,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240126",
@@ -7265,7 +6562,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240126",
@@ -7280,7 +6577,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240126",
@@ -7295,7 +6592,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240126",
@@ -7310,7 +6607,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240126",
@@ -7325,7 +6622,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240126",
@@ -7340,7 +6637,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240126",
@@ -7355,7 +6652,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240126",
@@ -7370,7 +6667,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240126",
@@ -7385,7 +6682,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240126",
@@ -7400,7 +6697,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240126",
@@ -7415,7 +6712,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240126",
@@ -7430,7 +6727,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240126",
@@ -7445,7 +6742,7 @@
               "carmeraNm": "",
               "ctlType": "스마트폰단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240126",
@@ -7460,7 +6757,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240126",
@@ -7475,7 +6772,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240126",
@@ -7490,7 +6787,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             },
             {
               "jbYmd": "20240126",
@@ -7505,7 +6802,7 @@
               "carmeraNm": "00000",
               "ctlType": "고정형CCTV단속",
               "guCode": "",
-              "guNam": ""
+              "guNam": "", "address": "부산광역시"
             }
           ]
         },
