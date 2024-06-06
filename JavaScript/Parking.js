@@ -9,6 +9,7 @@ var markerImage1 = new kakao.maps.MarkerImage(
 );
 
 function addMarkersFromJson(jsonFilePath) {
+    document.getElementById('parkingBtn').disabled = true;
     fetch(jsonFilePath)
         .then(response => response.json())
         .then(data => {
@@ -79,9 +80,11 @@ function addMarkersFromJson(jsonFilePath) {
         })
         .catch(error => {
             console.error('Error loading JSON file:', error);
+        })
+        .finally(() => {
+            document.getElementById('parkingBtn').disabled = false;
         });
 }
-
 
 function mouseClickListener(map, marker, infoWindow) {
     return function () {
