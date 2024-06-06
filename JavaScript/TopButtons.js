@@ -29,16 +29,8 @@ function toggleButtonGroup() {
     }
 }
 
-// document.getElementById('navBtn').addEventListener('click', () => {
-//     document.getElementById('navBtn').disabled = true;
-//     document.getElementById('illegalBtn').style.display = 'none';
-//     document.getElementById('parkingBtn').style.display = 'none';
-//     document.getElementById('clearBtn').style.display = 'none';
-// });
-
 document.getElementById('illegalBtn').addEventListener('click', () => {
     clearMarkers();
-    // addMarkersFromUrl(illegalUrl, 'illegal');
     addIllegalBoxes();
     document.getElementById('illegalBtn').disabled = true;
     document.getElementById('parkingBtn').disabled = true;
@@ -46,19 +38,6 @@ document.getElementById('illegalBtn').addEventListener('click', () => {
 });
 
 document.getElementById('parkingBtn').addEventListener('click', () => {
-    clearMarkers();
-    toggleSelect();
-    parkingUrls.forEach(url => addMarkersFromUrl(url, 'parking'));
-    addParkingBoxes();
+    toggleParking();
     document.getElementById('illegalBtn').disabled = true;
-    document.getElementById('parkingBtn').disabled = true;
-    document.getElementById('clearBtn').disabled = false;
-});
-
-document.getElementById('clearBtn').addEventListener('click', () => {
-    clearMarkers();
-    clearBox2();
-    document.getElementById('illegalBtn').disabled = false;
-    document.getElementById('parkingBtn').disabled = false;
-    document.getElementById('clearBtn').disabled = true;
 });

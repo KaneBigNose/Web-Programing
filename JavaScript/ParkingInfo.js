@@ -1,17 +1,34 @@
-const box1 = document.querySelector('.box1')
+const box1 = document.querySelector('.box1');
 const box2 = document.querySelector('.box2');
+
+var prkOnclick = false;
 
 function toggleSelect() {
     var selectContainer = document.querySelector('.box1 select');
     if (selectContainer) {
         selectContainer.remove();
-    } else {
+    }
+    else {
         var select = document.createElement('select');
         select.name = "filter";
         select.innerHTML = `
-    <option value="1" selected>거리순</option>
-    <option value="2">요금순</option>`;
+            <option value="1" selected>거리순</option>
+            <option value="2">요금순</option>`;
         document.querySelector('.box1').appendChild(select);
+    }
+}
+
+function toggleParking() {
+    if (prkOnclick == false) {
+        addMarkersFromJson(jsonFilePath);
+        addParkingBoxes();
+        toggleSelect();
+        prkOnclick = true;
+    }
+    else {
+        clearMarkers();
+        clearBox2();
+        prkOnclick = false;
     }
 }
 
