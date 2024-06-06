@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bottom Sheet</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* 화면을 벗어나는 내용을 숨깁니다. */
+    height: 100vh; /* 화면 전체의 높이를 차지하도록 설정합니다. */
+    display: flex; /* 내용을 수직 가운데 정렬하기 위해 flexbox를 사용합니다. */
+    justify-content: center; /* 내용을 수평 가운데 정렬합니다. */
+    align-items: center; /* 내용을 수직 가운데 정렬합니다. */
+  }
+  .bottom-sheet {
+    position: absolute; /* 절대 위치로 설정하여 화면 내 어디든 배치할 수 있습니다. */
+    width: 100%; /* 가로 폭을 화면 전체 너비로 설정합니다. */
+    max-width: 600px; /* 최대 너비를 600px로 제한합니다. */
+    height: 300px; /* 바텀 시트의 기본 높이를 설정합니다. */
+    background-color: #f0f0f0; /* 바텀 시트의 배경색을 설정합니다. */
+    border-top-left-radius: 20px; /* 상단 왼쪽 모서리를 둥글게 만듭니다. */
+    border-top-right-radius: 20px; /* 상단 오른쪽 모서리를 둥글게 만듭니다. */
+    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.1); /* 그림자 효과를 추가합니다. */
+    transition: transform 0.3s ease-out; /* 변환 효과를 부드럽게 만듭니다. */
+    touch-action: pan-y; /* 세로 방향으로만 터치 액션을 허용합니다. */
+  }
+</style>
+</head>
+<body>
+
+<div class="bottom-sheet" id="bottomSheet">
+  <!-- 여기에 바텀시트 안 내용 넣으면 됨 -->
+  <h2 style="text-align: center; margin-top: 50px;">Bottom Sheet</h2> <!-- 바텀 시트의 내용을 설정합니다. -->
+</div>
+
+<script>
+  const bottomSheet = document.getElementById('bottomSheet');
+  let startY = 0;
+  let currentY = 0;
+  let dragging = false;
+
+  bottomSheet.addEventListener('touchstart', (e) => {
+    dragging = true;
+    startY = e.touches[0].clientY - currentY; // 터치가 시작된 위치를 저장합니다.
+  });
+
+  bottomSheet.addEventListener('touchmove', (e) => {
+    if (!dragging) return;
+    e.preventDefault(); // 기본 터치 이벤트를 막습니다.
+    currentY = e.touches[0].clientY - startY; // 현재 터치 위치를 업데이트합니다
+    //화면 밖으로 바텀시트 나가는 거 방지.
+    if (currentY < 0) currentY = 0; // 화면 위쪽으로 너무 많이 드래그하지 않도록 합니다.
+    if (currentY > window.innerHeight - bottomSheet.clientHeight) currentY = window.innerHeight - bottomSheet.clientHeight; // 화면 아래쪽으로 너무 많이 드래그하지 않도록 합니다.
+    bottomSheet.style.transform = `translateY(${currentY}px)`; // 바텀 시트를 드래그한 만큼 이동시킵니다.
+  });
+
+  bottomSheet.addEventListener('touchend', () => {
+    dragging = false; // 터치가 끝날 때 드래깅 상태를 해제합니다.
+  });
+</script>
+
+</body>
+</html>
