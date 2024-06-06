@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="CSS/Buttons.css">
     <link rel="stylesheet" type="text/css" href="CSS/BeArranged.css">
     <link rel="stylesheet" type="text/css" href="CSS/Boxes.css">
+    <link rel="stylesheet" type="text/css" href="CSS/ParkingInfo.css">
 
     <script src="JavaScript/Parking.js" defer></script>
     <script src="JavaScript/TopButtons.js" defer></script>
@@ -18,12 +19,12 @@
     <script src="JavaScript/BBInfo.js" defer></script>
     <script src="JavaScript/polyline.js" defer></script>
 
-    <title>부산시 주정차 금지구역 및 공영 주차장 위치 표시</title>
+    <title>CLPK(Clean Parking)</title>
 </head>
 
 <body>
     <div class="title-container">
-        <h1>부산시 주정차 금지구역 및 공영 주차장 위치 표시</h1>
+        <h1>CLPK(Clean Parking)</h1>
     </div>
 
     <div id="btnContainer" class="btn-container hidden">
@@ -46,6 +47,7 @@
         var geocoder = new kakao.maps.services.Geocoder();
         var markers = [];
         var map;
+        var parkingData = [];
         var parkingMarkerImage = 'Images/parking.png';
 
         function clearMarkers() {

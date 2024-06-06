@@ -34,13 +34,18 @@ function toggleParking() {
 
 function addParkingBoxes() {
     addSubTitleBox2();
-    for (let i = 0; i < 10; i++) {
-        const newBox = document.createElement('div');
-        newBox.className = 'inner-box';
-        newBox.textContent = `주차장 정보 ${i + 1}`;
-        box2.appendChild(newBox);
-    }
+    parkingData.forEach((item, index) => {
+        const titleBox = document.createElement('div');
+        titleBox.className = 'inner-title';
+        titleBox.textContent = pkName;
+        box2.appendChild(titleBox);
+        const numberBox = document.createElement('div');
+        numberBox.className = 'inner-number';
+        numberBox.textContent = `주차장 정보 ${index + 1}`;
+        box2.appendChild(numberBox);
+    });
 }
+
 
 function clearBox2() {
     while (box1.firstChild) {
