@@ -48,7 +48,8 @@ document.getElementById('illegalBtn').addEventListener('click', () => {
 document.getElementById('parkingBtn').addEventListener('click', () => {
     clearMarkers();
     toggleSelect();
-    parkingUrls.forEach(url => addMarkersFromUrl(url, 'parking'));
+    addMarkersFromJson(jsonFilePath);
+    // parkingUrls.forEach(url => addMarkersFromUrl(url, 'parking'));
     addParkingBoxes();
     document.getElementById('illegalBtn').disabled = true;
     document.getElementById('parkingBtn').disabled = true;
