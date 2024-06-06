@@ -14,8 +14,9 @@
     <script src="JavaScript/Parking.js" defer></script>
     <script src="JavaScript/TopButtons.js" defer></script>
     <script src="JavaScript/ParkingInfo.js" defer></script>
-    <script src="JavaScript/CurrentLoc.js"defer ></script>
-    <script src="JavaScript/BBInfo.js"defer ></script>
+    <script src="JavaScript/CurrentLoc.js" defer></script>
+    <script src="JavaScript/BBInfo.js" defer></script>
+    <script src="JavaScript/polyline.js" defer></script>
 
     <title>부산시 주정차 금지구역 및 공영 주차장 위치 표시</title>
 </head>
@@ -25,21 +26,16 @@
         <h1>부산시 주정차 금지구역 및 공영 주차장 위치 표시</h1>
     </div>
 
-    <!-- <div class="button-container">
-        <button id="navBtn" type="button" onclick="openWindowAndDisableButton();">네비게이션</button>
-        <button id="moreBtn" type="button" onclick="toggleButtonGroup(); toggleButtons();">지도 + </button>
-    </div> -->
-
     <div id="btnContainer" class="btn-container hidden">
         <div class="btn-group">
-            <button id="illegalBtn" class="hidden-btn">주정차 금지구역</button>
+            <button id="illegalBtn" class="hidden-btn" disabled>주정차 금지구역</button>
             <button id="parkingBtn" class="hidden-btn">공영 주차장 위치</button>
-            <button id="clearBtn" class="hidden-btn" disabled>마커 지우기</button>
         </div>
     </div>
 
     <div class="map-container">
         <div id="map"></div>
+        
     </div>
 
     <script type="text/javascript"
@@ -56,19 +52,6 @@
             markers.forEach(marker => marker.setMap(null));
             markers = [];
         }
-
-        //function startMap() {
-        //    var mapContainer = document.getElementById('map'),
-        //        mapOption = {
-        //            center: new kakao.maps.LatLng(35.13457, 129.1031),
-        //            level: 3
-        //        };
-        //    map = new kakao.maps.Map(mapContainer, mapOption);
-        //}
-
-        // window.onload = function () {
-        //     startMap();
-        // }; 
     </script>
     <div class="boxContainer">
         <div class="box box1"></div>
