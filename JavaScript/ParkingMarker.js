@@ -1,6 +1,5 @@
 function addMarkersFromJson(jsonFilePath) {
     document.getElementById('parkingBtn').disabled = true;
-    addSubTitleBox2();
     fetch(jsonFilePath)
         .then(response => response.json())
         .then(data => {
@@ -17,43 +16,47 @@ function addMarkersFromJson(jsonFilePath) {
                 var pkDayFee = item.하루주차권요금;
                 var pkMonthFee = item.월정기권요금;
 
-                var infoBox = document.createElement('div');
+                const infoBox = document.createElement('div');
                 infoBox.className = 'inner-info';
                 box99.appendChild(infoBox);
 
-                var titleBox = document.createElement('div');
+                const infoBox1 = document.createElement('div');
+                infoBox1.className = 'inner-info1';
+                infoBox.appendChild(infoBox1);
+
+                const infoBox2 = document.createElement('div');
+                infoBox2.className = 'inner-info2';
+                infoBox.appendChild(infoBox2);
+
+                const titleBox = document.createElement('div');
                 titleBox.className = 'inner-title';
-                titleBox.textContent = name;
-                infoBox.appendChild(titleBox);
+                titleBox.textContent = item.주차장명;
+                infoBox1.appendChild(titleBox);
 
-                var numberBox = document.createElement('div');
+                const numberBox = document.createElement('div');
                 numberBox.className = 'inner-number';
-                if (pkNumber != null) {
-                    numberBox.textContent = `전화번호 : ` + pkNumber;
-                }
-                else {
-                    numberBox.textContent = `전화번호 : 없음`;
-                }
-                infoBox.appendChild(numberBox);
+                numberBox.textContent = `전화번호 : ${item.전화번호 || '정보없음'}`;
+                infoBox1.appendChild(numberBox);
 
-                var isOpenBox = document.createElement('div');
-                isOpenBox.textContent = getOperationStatus(pkTime1, pkTime2, pkTime3);
-                if (isOpenBox.textContent == "운영중") {
-                    isOpenBox.className = 'inner-isOpen';
-                }
-                else {
-                    isOpenBox.className = 'inner-isClose';
-                }
-                infoBox.appendChild(isOpenBox);
+                const isOpenBox = document.createElement('div');
+                isOpenBox.textContent = getOperationStatus(
+                    `${item.평일운영시작시각} ~ ${item.평일운영종료시각}`,
+                    `${item.토요일운영시작시각} ~ ${item.토요일운영종료시각}`,
+                    `${item.공휴일운영시작시각} ~ ${item.공휴일운영종료시각}`
+                );
+                isOpenBox.className = (isOpenBox.textContent === "운영중") ? 'inner-isOpen' : 'inner-isClose';
+                infoBox2.appendChild(isOpenBox);
 
-                var timeBox = document.createElement('div');
+                const timeBox = document.createElement('div');
                 timeBox.className = 'inner-time';
-                timeBox.innerHTML = `평일 (${pkTime1})<br>`;
-                timeBox.innerHTML += `토요일 (${pkTime2})<br>`;
-                timeBox.innerHTML += `공휴일 (${pkTime3})`;
-                infoBox.appendChild(timeBox);
+                timeBox.innerHTML = `
+                    평일 (${item.평일운영시작시각} ~ ${item.평일운영종료시각})<br>
+                    토요일 (${item.토요일운영시작시각} ~ ${item.토요일운영종료시각})<br>
+                    공휴일 (${item.공휴일운영시작시각} ~ ${item.공휴일운영종료시각})
+                `;
+                infoBox2.appendChild(timeBox);
 
-                var payBox = document.createElement('div');
+                const payBox = document.createElement('div');
                 payBox.className = 'inner-pay';
                 if (pkNeedMoney == "유료") {
                     if(pkBaseFee != null) {
@@ -78,7 +81,7 @@ function addMarkersFromJson(jsonFilePath) {
                 else {
                     payBox.textContent = `주차요금 : ` + pkNeedMoney;
                 }
-                infoBox.appendChild(payBox);
+                infoBox2.appendChild(payBox);
 
                 if (address && address.includes(',')) {
                     address = item.소재지도로명주소;

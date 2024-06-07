@@ -6,88 +6,95 @@ select {
     right: 10px;
 }
 
-.subtitle-box {
-    position: absolute;
-    top: 5px;
-    left: 10px;
-    font-size: 24px;
-    margin: 0px;
+.inner-info {
+    display: flex;
+    height: 130px;
+    flex-direction: column;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-.inner-info {
-    height: 100px;
-    border: 1px solid #949090;
-    margin: 5px;
+.inner-info1 {
+    display: flex;
+    flex-direction: row;
+    border: 0.5px solid black;
+    border-bottom: 0px;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
+}
+
+.inner-info2 {
+    display: flex;
+    flex-direction: row;
+    border: 0.5px solid black;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.inner-info-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: 0.5px solid black;
 }
 
 .inner-title {
-    position: relative;
-    float: left;
-    height: 30px;
-    margin: 5px;
-    box-sizing: border-box;
-    font-size: 24px;
+    flex: 1;
+    font-size: 20px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    border: 0.5px solid black;
+    text-align: center;
 }
 
 .inner-number {
-    float: right;
-    width: 250px;
-    height: 15px;
-    border: 0px solid #949090;
-    margin-top: 10px;
-    padding-left: 5px;
-    box-sizing: border-box;
-    font-size: 16px;
+    flex: 1;
+    text-align: right;
+    font-size: 14px;
+    margin-top: 0px;
+    text-align: center;
+    border: 0.5px solid black;
+    padding-top: 4px;
 }
 
 .inner-isOpen {
-    position: relative;
-    top: -3px;
-    width: 80px;
-    height: 17px;
-    margin: 0px;
-    padding-left: 8px;
-    box-sizing: border-box;
+    flex: 1;
     font-size: 16px;
     color: blue;
+    text-align: center;
+    border: 0.5px solid black;
+    padding-top: 11px;
 }
 
 .inner-isClose {
-    position: relative;
-    top: -3px;
-    width: 80px;
-    height: 17px;
-    margin: 0px;
-    padding-left: 8px;
-    box-sizing: border-box;
+    width: 100px;
+    flex: 1;
     font-size: 16px;
     color: red;
+    text-align: center;
+    border: 0.5px solid black;
+    padding-top: 11px;
 }
 
 .inner-time {
-    position: relative;
-    left: 100px;
-    width: 160px;
-    height: 50px;
-    margin-left: 10px;
-    margin-top: 0px;
-    padding-left: 2px;
-    box-sizing: border-box;
+    flex: 1;
     font-size: 12px;
     color: grey;
+    margin-top: 0px;
+    text-align: center;
+    border: 0.5px solid black;
 }
 
 .inner-pay {
-    position: relative;
-    top: -30px;
-    left: 426px;
-    width: 160px;
-    height: 50px;
-    box-sizing: border-box;
+    flex: 1;
     font-size: 12px;
     color: grey;
+    text-align: center;
+    margin-top: 0px;
+    border: 0.5px solid black;
 }

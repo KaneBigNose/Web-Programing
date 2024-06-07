@@ -21,7 +21,7 @@ function toggleSelect() {
 function toggleParking() {
     if (prkOnclick == false) {
         addMarkersFromJson(jsonFilePath);
-        addParkingBoxes();
+        addSubTitleBox2();
         toggleSelect();
         prkOnclick = true;
     }
@@ -31,21 +31,6 @@ function toggleParking() {
         prkOnclick = false;
     }
 }
-
-function addParkingBoxes() {
-    addSubTitleBox2();
-    parkingData.forEach((item, index) => {
-        const titleBox = document.createElement('div');
-        titleBox.className = 'inner-title';
-        titleBox.textContent = pkName;
-        box2.appendChild(titleBox);
-        const numberBox = document.createElement('div');
-        numberBox.className = 'inner-number';
-        numberBox.textContent = `주차장 정보 ${index + 1}`;
-        box2.appendChild(numberBox);
-    });
-}
-
 
 function clearBox2() {
     while (box1.firstChild) {
