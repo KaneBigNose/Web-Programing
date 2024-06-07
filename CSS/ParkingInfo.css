@@ -37,7 +37,7 @@ select {
     width: 250px;
     height: 15px;
     border: 0px solid #949090;
-    margin: 3px;
+    margin-top: 10px;
     padding-left: 5px;
     box-sizing: border-box;
     font-size: 14px;
@@ -46,7 +46,7 @@ select {
 .inner-isOpen {
     position: relative;
     top: -3px;
-    width: 60px;
+    width: 80px;
     height: 17px;
     margin: 0px;
     padding-left: 8px;
@@ -55,9 +55,21 @@ select {
     color: blue;
 }
 
+.inner-isClose {
+    position: relative;
+    top: -3px;
+    width: 80px;
+    height: 17px;
+    margin: 0px;
+    padding-left: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: red;
+}
+
 .inner-time {
     position: relative;
-    left: 60px;
+    left: 100px;
     width: 160px;
     height: 50px;
     margin-left: 10px;

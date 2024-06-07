@@ -40,8 +40,13 @@ function addMarkersFromJson(jsonFilePath) {
                 infoBox.appendChild(numberBox);
 
                 var isOpenBox = document.createElement('div');
-                isOpenBox.className = 'inner-isOpen';
-                isOpenBox.textContent = `운영중`;
+                isOpenBox.textContent = getOperationStatus(pkTime1, pkTime2, pkTime3);
+                if (isOpenBox.textContent == "운영중") {
+                    isOpenBox.className = 'inner-isOpen';
+                }
+                else {
+                    isOpenBox.className = 'inner-isClose';
+                }
                 infoBox.appendChild(isOpenBox);
 
                 var timeBox = document.createElement('div');
@@ -116,6 +121,42 @@ function addMarkersFromJson(jsonFilePath) {
         .finally(() => {
             document.getElementById('parkingBtn').disabled = false;
         });
+}
+
+function getOperationStatus(pkTime1, pkTime2, pkTime3) {
+    const now = new Date();
+    const currentDay = now.getDay();
+    const currentTime = now.getHours() * 60 + now.getMinutes();
+
+    function parseTime(timeStr) {
+        const [hours, minutes] = timeStr.split(':').map(Number);
+        return hours * 60 + minutes;
+    }
+
+    let startTime, endTime;
+    if (currentDay >= 1 && currentDay <= 5) {
+        startTime = parseTime(pkTime1.split(' ~ ')[0]);
+        endTime = parseTime(pkTime1.split(' ~ ')[1]);
+    } else if (currentDay === 6) {
+        startTime = parseTime(pkTime2.split(' ~ ')[0]);
+        endTime = parseTime(pkTime2.split(' ~ ')[1]);
+    } else {
+        startTime = parseTime(pkTime3.split(' ~ ')[0]);
+        endTime = parseTime(pkTime3.split(' ~ ')[1]);
+    }
+
+    if (endTime < startTime) {
+        endTime += 24 * 60;
+        if (currentTime < startTime) {
+            currentTime += 24 * 60;
+        }
+    }
+
+    if (currentTime >= startTime && currentTime <= endTime) {
+        return "운영중";
+    } else {
+        return "운영종료";
+    }
 }
 
 function mouseClickListener(map, marker, infoWindow) {
