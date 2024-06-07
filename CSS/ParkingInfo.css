@@ -40,7 +40,7 @@ select {
     margin-top: 10px;
     padding-left: 5px;
     box-sizing: border-box;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .inner-isOpen {
@@ -75,6 +75,17 @@ select {
     margin-left: 10px;
     margin-top: 0px;
     padding-left: 2px;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: grey;
+}
+
+.inner-pay {
+    position: relative;
+    top: -30px;
+    left: 426px;
+    width: 160px;
+    height: 50px;
     box-sizing: border-box;
     font-size: 12px;
     color: grey;
