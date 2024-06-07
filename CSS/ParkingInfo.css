@@ -19,7 +19,6 @@ select {
 .inner-info1 {
     display: flex;
     flex-direction: row;
-    border: 0.5px solid black;
     border-bottom: 0px;
     margin: 0px;
     padding: 0px;
@@ -29,7 +28,6 @@ select {
 .inner-info2 {
     display: flex;
     flex-direction: row;
-    border: 0.5px solid black;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -39,7 +37,6 @@ select {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    border: 0.5px solid black;
 }
 
 .inner-title {
@@ -50,6 +47,7 @@ select {
     text-overflow: ellipsis;
     border: 0.5px solid black;
     text-align: center;
+    border-right: 0px;
 }
 
 .inner-number {
@@ -69,6 +67,7 @@ select {
     text-align: center;
     border: 0.5px solid black;
     padding-top: 11px;
+    border-top: 0px;
 }
 
 .inner-isClose {
@@ -79,6 +78,7 @@ select {
     text-align: center;
     border: 0.5px solid black;
     padding-top: 11px;
+    border-top: 0px;
 }
 
 .inner-time {
@@ -88,6 +88,8 @@ select {
     margin-top: 0px;
     text-align: center;
     border: 0.5px solid black;
+    border-left: 0px;
+    border-top: 0px;
 }
 
 .inner-pay {
@@ -97,4 +99,6 @@ select {
     text-align: center;
     margin-top: 0px;
     border: 0.5px solid black;
+    border-left: 0px;
+    border-top: 0px;
 }
