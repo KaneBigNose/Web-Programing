@@ -40,8 +40,12 @@ function getOperationStatus(pkTime1, pkTime2, pkTime3) {
 
     if (currentTime >= startTime && currentTime <= endTime) {
         return "운영중";
-    } else {
-        return "운영종료";
+    } 
+    else if (currentTime > endTime) {
+        return "운영종료"
+    }
+    else {
+        return "알 수 없음";
     }
 }
 

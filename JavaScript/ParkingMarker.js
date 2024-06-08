@@ -44,16 +44,29 @@ function addMarkersFromJson(jsonFilePath) {
                     `${item.토요일운영시작시각} ~ ${item.토요일운영종료시각}`,
                     `${item.공휴일운영시작시각} ~ ${item.공휴일운영종료시각}`
                 );
-                isOpenBox.className = (isOpenBox.textContent === "운영중") ? 'inner-isOpen' : 'inner-isClose';
+                if(isOpenBox.textContent === "운영중") {
+                    isOpenBox.className = 'inner-isOpen';
+                }
+                else if(isOpenBox.textContent === "알 수 없음") {
+                    isOpenBox.className = 'inner-isNot';
+                }
+                else {
+                    isOpenBox.className = 'inner-isClose';
+                }
                 infoBox2.appendChild(isOpenBox);
 
                 const timeBox = document.createElement('div');
                 timeBox.className = 'inner-time';
-                timeBox.innerHTML = `
+                if (item.평일운영시작시각 == null) {
+                    timeBox.textContent = "시간 정보 없음"
+                }
+                else {
+                    timeBox.innerHTML = `
                     평일 (${item.평일운영시작시각} ~ ${item.평일운영종료시각})<br>
                     토요일 (${item.토요일운영시작시각} ~ ${item.토요일운영종료시각})<br>
                     공휴일 (${item.공휴일운영시작시각} ~ ${item.공휴일운영종료시각})
                 `;
+                }
                 infoBox2.appendChild(timeBox);
 
                 const payBox = document.createElement('div');
@@ -78,8 +91,11 @@ function addMarkersFromJson(jsonFilePath) {
                         payBox.innerHTML += `월정기권 : 정보없음`;
                     }
                 }
-                else {
+                else if (pkNeedMoney == "무료") {
                     payBox.textContent = `주차요금 : ` + pkNeedMoney;
+                }
+                else {
+                    payBox.textContent = `주차요금 : 정보없음`;
                 }
                 infoBox2.appendChild(payBox);
 
@@ -87,7 +103,7 @@ function addMarkersFromJson(jsonFilePath) {
                     address = item.소재지도로명주소;
                 }
 
-                if (address && address.startsWith("부산")) {
+                if (address != null) {
 
                     geocoder.addressSearch(address, function (result, status) {
                         if (status === kakao.maps.services.Status.OK) {
