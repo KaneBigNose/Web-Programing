@@ -30,14 +30,22 @@ function toggleButtonGroup() {
 }
 
 document.getElementById('illegalBtn').addEventListener('click', () => {
-    clearMarkers();
-    addIllegalBoxes();
-    document.getElementById('illegalBtn').disabled = true;
-    document.getElementById('parkingBtn').disabled = true;
-    document.getElementById('clearBtn').disabled = false;
+    toggleillegal();
 });
 
 document.getElementById('parkingBtn').addEventListener('click', () => {
     toggleParking();
-    document.getElementById('illegalBtn').disabled = true;
 });
+
+var illegalOnclick = false;
+
+function toggleillegal() {
+    if(illegalOnclick == false) {
+        lines.forEach(drawPolyline);
+        illegalOnclick = true;
+    }
+    else {
+        deleteAllPolylines()
+        illegalOnclick = false;
+    }
+}
