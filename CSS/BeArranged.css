@@ -68,12 +68,23 @@
     }
 
     .bottom-sheet {
-        padding: 5px;
-        height: 40vh; /* 모바일 화면에서의 기본 높이 설정 */
+        position: fixed;
+        left: 0;
+        width: 100%;
+        max-width: 100%; /* 선택적으로 최대 너비를 지정할 수 있습니다. */
+        background: white;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        padding: 10px;
+        z-index: 1000;
+        height: auto; /* 높이를 자동으로 조정합니다. */
     }
 
     .box {
-        padding: 10px;
+        margin: 10px 0;
+        padding: 15px;
+        background-color: #f1f1f1;
+        border-radius: 10px;
     }
     #map {
         height: 100vh; /* 모바일 화면에서의 높이 설정 */

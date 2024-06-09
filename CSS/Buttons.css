@@ -24,42 +24,31 @@ button:hover {
 }
 
 #illegalBtn {
-    width: 221px;
-    height: 30px;
-    font-size: 16px;
+    width: 50%;
+    height: 100%;
+    font-size: 1em;
     background-color: white;
     color: black;
     border-radius: 10px;
     transition: all 0.3s ease;
+    vertical-align: middle;
 }
 
 #parkingBtn {
-    width: 221px;
-    height: 30px;
-    font-size: 16px;
+    width: 50%;
+    height: 100%;
+    font-size: 1em;
     background-color: white;
     color: black;
     border-radius: 10px;
     transition: all 0.3s ease;
+    align-items: center;
 }
 
-#clearBtn {
-    width: 221px;
-    height: 30px;
-    font-size: 16px;
-    background-color: white;
-    color: black;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-}
+
 
 #illegalBtn:hover,
-#parkingBtn:hover,
-#clearBtn:hover {
+#parkingBtn:hover {
     background-color: lightgray;
 }
 
-/* #navBtn,
-#moreBtn {
-    border: 2px solid black;
-} */
