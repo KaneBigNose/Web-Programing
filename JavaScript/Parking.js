@@ -1,4 +1,5 @@
 const jsonFilePath = 'Json/parking.json';
+const box99 = document.querySelector('.box2');
 
 var markerImage1 = new kakao.maps.MarkerImage(
     parkingMarkerImage,
@@ -8,82 +9,44 @@ var markerImage1 = new kakao.maps.MarkerImage(
     }
 );
 
-function addMarkersFromJson(jsonFilePath) {
-    document.getElementById('parkingBtn').disabled = true;
-    fetch(jsonFilePath)
-        .then(response => response.json())
-        .then(data => {
-            data.forEach(item => {
-                var address = item.소재지지번주소;
+function getOperationStatus(pkTime1, pkTime2, pkTime3) {
+    const now = new Date();
+    const currentDay = now.getDay();
+    const currentTime = now.getHours() * 60 + now.getMinutes();
 
-                if (address && address.includes(',')) {
-                    address = item.소재지도로명주소;
-                }
+    function parseTime(timeStr) {
+        const [hours, minutes] = timeStr.split(':').map(Number);
+        return hours * 60 + minutes;
+    }
 
-                var name = item.주차장명;
+    let startTime, endTime;
+    if (currentDay >= 1 && currentDay <= 5) {
+        startTime = parseTime(pkTime1.split(' ~ ')[0]);
+        endTime = parseTime(pkTime1.split(' ~ ')[1]);
+    } else if (currentDay === 6) {
+        startTime = parseTime(pkTime2.split(' ~ ')[0]);
+        endTime = parseTime(pkTime2.split(' ~ ')[1]);
+    } else {
+        startTime = parseTime(pkTime3.split(' ~ ')[0]);
+        endTime = parseTime(pkTime3.split(' ~ ')[1]);
+    }
 
-                if (address && address.startsWith("부산")) {
-                    console.log(`주소: ${address}, 이름: ${name}`);
+    if (endTime < startTime) {
+        endTime += 24 * 60;
+        if (currentTime < startTime) {
+            currentTime += 24 * 60;
+        }
+    }
 
-                    geocoder.addressSearch(address, function (result, status) {
-                        if (status === kakao.maps.services.Status.OK) {
-                            var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
-
-                            var marker = new kakao.maps.Marker({
-                                map: map,
-                                position: coords,
-                                image: markerImage1
-                            });
-                            markers.push(marker);
-
-                            var content = `<div>${name}</div>`;
-
-                            var infoWindow = new kakao.maps.InfoWindow({
-                                content: content
-                            });
-
-                            kakao.maps.event.addListener(marker, "click", mouseClickListener(map, marker, infoWindow));
-                            kakao.maps.event.addListener(marker, "mouseout", mouseOutListener(infoWindow));
-
-                        } else {
-                            console.error('Failed to search address:', address);
-                            if (item.소재지도로명주소) {
-                                geocoder.addressSearch(item.소재지도로명주소, function (result, status) {
-                                    if (status === kakao.maps.services.Status.OK) {
-                                        var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
-
-                                        var marker = new kakao.maps.Marker({
-                                            map: map,
-                                            position: coords,
-                                            image: markerImage1
-                                        });
-                                        markers.push(marker);
-
-                                        var content = `<div>${name}</div>`;
-
-                                        var infoWindow = new kakao.maps.InfoWindow({
-                                            content: content
-                                        });
-
-                                        kakao.maps.event.addListener(marker, "click", mouseClickListener(map, marker, infoWindow));
-                                        kakao.maps.event.addListener(marker, "mouseout", mouseOutListener(infoWindow));
-
-                                    } else {
-                                        console.error('Failed to search address with alternate address:', item.소재지도로명주소);
-                                    }
-                                });
-                            }
-                        }
-                    });
-                }
-            });
-        })
-        .catch(error => {
-            console.error('Error loading JSON file:', error);
-        })
-        .finally(() => {
-            document.getElementById('parkingBtn').disabled = false;
-        });
+    if (currentTime >= startTime && currentTime <= endTime) {
+        return "운영중";
+    } 
+    else if (currentTime > endTime) {
+        return "운영종료"
+    }
+    else {
+        return "알 수 없음";
+    }
 }
 
 function mouseClickListener(map, marker, infoWindow) {

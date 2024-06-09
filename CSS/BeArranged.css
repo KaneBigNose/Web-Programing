@@ -9,11 +9,12 @@
 }
 
 #map {
-    width: 700px;
-    height: 450px;
     margin-top: 5px;
     margin-bottom: 5px;
     border: 2px solid black;
+    width: 100%;
+    height: calc(100vh - 200px);
+    transition: height 0.3s ease-out;
 }
 
 .btn-container {
@@ -36,4 +37,47 @@
 .map-container {
     display: flex;
     justify-content: center;
+}
+
+.bottom-sheet {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px 15px 0 0;
+    padding: 10px;
+    z-index: 1000;
+    height: 30vh; /* 기본 높이 설정 */
+    transition: transform 0.3s ease-out, height 0.3s ease-out;
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+    .title-container h1 {
+        font-size: 1.5em;
+    }
+
+    .btn-group button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+
+    .map-container {
+        height: 300px;
+    }
+
+    .bottom-sheet {
+        padding: 5px;
+        height: 40vh; /* 모바일 화면에서의 기본 높이 설정 */
+    }
+
+    .box {
+        padding: 10px;
+    }
+    #map {
+        height: 100vh; /* 모바일 화면에서의 높이 설정 */
+        margin: 0; /* 여백 제거 */
+        border: none; /* 테두리 제거 */
+    }
 }
