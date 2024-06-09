@@ -38,6 +38,7 @@ document.getElementById('illegalBtn').addEventListener('click', () => {
 });
 
 document.getElementById('parkingBtn').addEventListener('click', () => {
+    clearMarkers();
     toggleParking();
     document.getElementById('illegalBtn').disabled = true;
 });
