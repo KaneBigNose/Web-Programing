@@ -31,7 +31,7 @@ button:hover {
     color: black;
     border-radius: 10px;
     transition: all 0.3s ease;
-    vertical-align: middle;
+    line-height: 0px;
 }
 
 #parkingBtn {
@@ -42,13 +42,17 @@ button:hover {
     color: black;
     border-radius: 10px;
     transition: all 0.3s ease;
-    align-items: center;
+    line-height: 0px;
 }
 
 
 
-#illegalBtn:hover,
-#parkingBtn:hover {
-    background-color: lightgray;
+.hidden-btn {
+    margin: 5px;
+    border: 2px solid black;
+    transition: background-color 0.3s ease; /* 배경색 변경에 대한 전환 효과를 추가합니다. */
 }
 
+.hidden-btn.active {
+    background-color: gray; /* 활성화된 경우의 배경색을 설정합니다. */
+}
