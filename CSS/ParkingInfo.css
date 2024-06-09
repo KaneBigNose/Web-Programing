@@ -41,13 +41,15 @@ select {
 
 .inner-title {
     flex: 1;
-    font-size: 20px;
+    font-size: 15px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     border: 0.5px solid black;
     text-align: center;
     border-right: 0px;
+    font-weight: bold;
+    
 }
 
 .inner-number {
@@ -58,8 +60,8 @@ select {
     text-align: center;
     border: 0.5px solid black;
     padding-top: 4px;
-}
 
+}
 .inner-isOpen {
     flex: 1;
     font-size: 16px;
