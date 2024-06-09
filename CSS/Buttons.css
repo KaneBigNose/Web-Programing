@@ -46,13 +46,7 @@ button:hover {
 }
 
 
-
-.hidden-btn {
-    margin: 5px;
-    border: 2px solid black;
-    transition: background-color 0.3s ease; /* 배경색 변경에 대한 전환 효과를 추가합니다. */
-}
-
-.hidden-btn.active {
-    background-color: gray; /* 활성화된 경우의 배경색을 설정합니다. */
+#illegalBtn:hover,
+#parkingBtn:hover {
+    background-color: lightgray;
 }
