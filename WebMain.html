@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="CSS/BeArranged.css">
     <link rel="stylesheet" type="text/css" href="CSS/Boxes.css">
     <link rel="stylesheet" type="text/css" href="CSS/ParkingInfo.css">
+    <link rel="stylesheet" type="text/css" href="CSS/BottomSheet.css">
 
     <script src="JavaScript/Parking.js" defer></script>
     <script src="JavaScript/TopButtons.js" defer></script>
@@ -19,6 +20,7 @@
     <script src="JavaScript/BBInfo.js" defer></script>
     <script src="JavaScript/polyline.js" defer></script>
     <script src="JavaScript/ParkingMarker.js" defer></script>
+    <script src="JavaScript/BottomSheet.js" defer></script>
 
     <title>CLPK(Clean Parking)</title>
 </head>
@@ -37,7 +39,6 @@
 
     <div class="map-container">
         <div id="map"></div>
-        
     </div>
 
     <script type="text/javascript"
@@ -56,7 +57,11 @@
             markers = [];
         }
     </script>
-    <div class="boxContainer">
+    <!-- <div class="boxContainer">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+    </div> -->
+    <div class="bottom-sheet" id="bottomSheet">
         <div class="box box1"></div>
         <div class="box box2"></div>
     </div>

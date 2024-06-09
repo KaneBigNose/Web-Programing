@@ -9,11 +9,12 @@
 }
 
 #map {
-    width: 700px;
-    height: 450px;
     margin-top: 5px;
     margin-bottom: 5px;
     border: 2px solid black;
+    width: 100%;
+    height: calc(100vh - 300px);
+    transition: height 0.3s ease-out;
 }
 
 .btn-container {
