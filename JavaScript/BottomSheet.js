@@ -22,7 +22,7 @@ bottomSheet.addEventListener('touchmove', (e) => {
         currentY = window.innerHeight - bottomSheet.clientHeight; // 시트가 화면 아래로 넘어가지 않도록 제한합니다.
     bottomSheet.style.transform = `translateY(${currentY}px)`; // 시트를 이동합니다.
 
-    // Update the last Y position and timestamp
+    // 마지막 Y 위치와 타임스탬프를 업데이트합니다.
     lastY = e.touches[0].clientY;
     lastTimestamp = e.timeStamp;
 });
@@ -30,12 +30,12 @@ bottomSheet.addEventListener('touchmove', (e) => {
 bottomSheet.addEventListener('touchend', (e) => {
     dragging = false;
 
-    // Calculate the velocity
+    // 속도를 계산합니다.
     const deltaY = e.changedTouches[0].clientY - lastY;
     const deltaTime = e.timeStamp - lastTimestamp;
     const velocity = deltaY / deltaTime;
 
-    // Determine the final position based on the velocity
+    // 속도를 기반으로 최종 위치를 결정합니다.
     if (velocity > 0.5) {
         bottomSheet.style.transform = `translateY(${window.innerHeight - bottomSheet.clientHeight}px)`;
         currentY = window.innerHeight - bottomSheet.clientHeight;
@@ -43,7 +43,7 @@ bottomSheet.addEventListener('touchend', (e) => {
         bottomSheet.style.transform = `translateY(0px)`;
         currentY = 0;
     } else {
-        // Keep the current position
+        // 속도가 충분하지 않으면 현재 위치를 유지합니다.
         bottomSheet.style.transform = `translateY(${currentY}px)`;
     }
 });

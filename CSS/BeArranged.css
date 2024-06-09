@@ -42,14 +42,14 @@
 .bottom-sheet {
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 95%;
     background: white;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 15px 15px 0 0;
-    padding: 10px;
+    padding: 0px;
     z-index: 1000;
-    height: 30vh; /* 기본 높이 설정 */
+    height: 50vh; /* 기본 높이 설정 */
     transition: transform 0.3s ease-out, height 0.3s ease-out;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 /* 모바일 */
@@ -68,24 +68,18 @@
     }
 
     .bottom-sheet {
-        position: fixed;
-        left: 0;
-        width: 100%;
+        position: absolute;
+        width: 95%;
         max-width: 100%; /* 선택적으로 최대 너비를 지정할 수 있습니다. */
         background: white;
-        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-        border-radius: 15px;
         padding: 10px;
         z-index: 1000;
-        height: auto; /* 높이를 자동으로 조정합니다. */
+        height: 50vh; /* 높이를 자동으로 조정합니다. */
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
     }
 
-    .box {
-        margin: 10px 0;
-        padding: 15px;
-        background-color: #f1f1f1;
-        border-radius: 10px;
-    }
+    
     #map {
         height: 100vh; /* 모바일 화면에서의 높이 설정 */
         margin: 0; /* 여백 제거 */

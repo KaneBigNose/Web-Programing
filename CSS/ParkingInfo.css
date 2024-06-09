@@ -41,7 +41,7 @@ select {
 
 .inner-title {
     flex: 1;
-    font-size: 20px;
+    font-size: 15px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
