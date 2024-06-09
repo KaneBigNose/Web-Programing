@@ -34,9 +34,26 @@ function addMarkersFromJson(jsonFilePath) {
                 infoBox1.appendChild(titleBox);
 
                 const numberBox = document.createElement('div');
-                numberBox.className = 'inner-number';
-                numberBox.textContent = `전화번호 : ${item.전화번호 || '정보없음'}`;
-                infoBox1.appendChild(numberBox);
+                geocoder.addressSearch(address, function (result, status) {
+                    if (status === kakao.maps.services.Status.OK) {
+                        var lat = result[0].y;
+                        var lng = result[0].x;
+                        navigator.geolocation.watchPosition(function (position) {
+                            var currentLat = position.coords.latitude;
+                            var currentLng = position.coords.longitude;
+                            let result = getDistance(currentLat, currentLng, lat, lng);
+                            let distance = Math.round(result * 1000) / 1000;
+                            numberBox.className = 'inner-number';
+                            numberBox.textContent = `거리 : ${distance + 'km' || '계산할 수 없음'}`;
+                            infoBox1.appendChild(numberBox);
+                        });
+                    }
+                    else {
+                        numberBox.className = 'inner-number';
+                        numberBox.textContent = `거리 : 계산할 수 없음`;
+                        infoBox1.appendChild(numberBox);
+                    }
+                });
 
                 const isOpenBox = document.createElement('div');
                 isOpenBox.textContent = getOperationStatus(
@@ -44,10 +61,10 @@ function addMarkersFromJson(jsonFilePath) {
                     `${item.토요일운영시작시각} ~ ${item.토요일운영종료시각}`,
                     `${item.공휴일운영시작시각} ~ ${item.공휴일운영종료시각}`
                 );
-                if(isOpenBox.textContent === "운영중") {
+                if (isOpenBox.textContent === "운영중") {
                     isOpenBox.className = 'inner-isOpen';
                 }
-                else if(isOpenBox.textContent === "알 수 없음") {
+                else if (isOpenBox.textContent === "알 수 없음") {
                     isOpenBox.className = 'inner-isNot';
                 }
                 else {
@@ -72,19 +89,19 @@ function addMarkersFromJson(jsonFilePath) {
                 const payBox = document.createElement('div');
                 payBox.className = 'inner-pay';
                 if (pkNeedMoney == "유료") {
-                    if(pkBaseFee != null) {
+                    if (pkBaseFee != null) {
                         payBox.innerHTML = `기본요금 : ${pkBaseFee}원<br>`;
                     }
                     else {
                         payBox.innerHTML = `기본요금 : 정보없음<br>`;
                     }
-                    if(pkDayFee != null) {
+                    if (pkDayFee != null) {
                         payBox.innerHTML += `하루요금 : ${pkDayFee}원<br>`;
                     }
                     else {
                         payBox.innerHTML += `하루요금 : 정보없음<br>`;
                     }
-                    if(pkMonthFee != null) {
+                    if (pkMonthFee != null) {
                         payBox.innerHTML += `월정기권 : ${pkMonthFee}원`;
                     }
                     else {
@@ -164,4 +181,17 @@ function addMarkersFromJson(jsonFilePath) {
         .finally(() => {
             document.getElementById('parkingBtn').disabled = false;
         });
+}
+
+function getDistance(lat1, lng1, lat2, lng2) {
+    function deg2rad(deg) {
+        return deg * (Math.PI / 180)
+    }
+    var R = 6371;
+    var dLat = deg2rad(lat2 - lat1);
+    var dLon = deg2rad(lng2 - lng1);
+    var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) + Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) * Math.sin(dLon / 2) * Math.sin(dLon / 2);
+    var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    var d = R * c;
+    return d;
 }
