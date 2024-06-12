@@ -1,13 +1,11 @@
 const bottomSheet = document.getElementById('bottomSheet');
-const bottomSheetUp = document.getElementById('bottomSheetUp');
-const bottomSheetDown = document.getElementById('bottomSheetDown');
 let startY = 0;
 let currentY = 0;
 let dragging = false;
 let lastY = 0;
 let lastTimestamp = 0;
 
-bottomSheetUp.addEventListener('touchstart', (e) => {
+bottomSheet.addEventListener('touchstart', (e) => {
     e.preventDefault(); // 기본 터치 이벤트를 막습니다.
     dragging = true;
     startY = e.touches[0].clientY - currentY; // 터치가 시작된 위치를 저장합니다.
@@ -15,7 +13,7 @@ bottomSheetUp.addEventListener('touchstart', (e) => {
     lastTimestamp = e.timeStamp;
 });
 
-bottomSheetUp.addEventListener('touchmove', (e) => {
+bottomSheet.addEventListener('touchmove', (e) => {
     if (!dragging) return;
     e.preventDefault();
     currentY = e.touches[0].clientY - startY; // 현재 위치를 계산합니다.
@@ -29,7 +27,7 @@ bottomSheetUp.addEventListener('touchmove', (e) => {
     lastTimestamp = e.timeStamp;
 });
 
-bottomSheetUp.addEventListener('touchend', (e) => {
+bottomSheet.addEventListener('touchend', (e) => {
     dragging = false;
 
     // 속도를 계산합니다.
@@ -55,17 +53,4 @@ window.addEventListener('resize', () => {
         currentY = window.innerHeight - bottomSheet.clientHeight;
         bottomSheet.style.transform = `translateY(${currentY}px)`; // 시트 위치를 화면 크기에 맞게 조정합니다.
     }
-});
-
-bottomSheetDown.addEventListener('wheel', (e) => {
-    e.preventDefault();
-    const deltaY = e.deltaY; // 마우스 휠의 이동량을 가져옵니다.
-    currentY += deltaY; // 현재 위치에 이동량을 더합니다.
-
-    // 이동 범위를 제한합니다.
-    if (currentY < 0) currentY = 0;
-    if (currentY > window.innerHeight - bottomSheet.clientHeight)
-        currentY = window.innerHeight - bottomSheet.clientHeight;
-
-    bottomSheet.style.transform = `translateY(${currentY}px)`; // 시트를 이동합니다.
 });
