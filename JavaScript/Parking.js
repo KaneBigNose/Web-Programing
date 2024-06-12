@@ -45,7 +45,7 @@ function getOperationStatus(pkTime1, pkTime2, pkTime3) {
         return "운영종료"
     }
     else {
-        return "알 수 없음";
+        return "주거지 주차장";
     }
 }
 

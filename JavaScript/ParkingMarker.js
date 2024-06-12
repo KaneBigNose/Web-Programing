@@ -64,7 +64,7 @@ function addMarkersFromJson(jsonFilePath) {
                 if (isOpenBox.textContent === "운영중") {
                     isOpenBox.className = 'inner-isOpen';
                 }
-                else if (isOpenBox.textContent === "알 수 없음") {
+                else if (isOpenBox.textContent === "주거지 주차장") {
                     isOpenBox.className = 'inner-isNot';
                 }
                 else {
