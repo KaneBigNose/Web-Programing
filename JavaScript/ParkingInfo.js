@@ -1,5 +1,6 @@
 const box1 = document.querySelector('.box1');
 const box2 = document.querySelector('.box2');
+const bottomSheet = document.getElementById('bottomSheet');
 
 var prkOnclick = false;
 
@@ -11,10 +12,15 @@ function toggleSelect() {
     else {
         var select = document.createElement('select');
         select.name = "filter";
+        select.id = "select";
         select.innerHTML = `
             <option value="1" selected>거리순</option>
             <option value="2">요금순</option>`;
         document.querySelector('.box1').appendChild(select);
+
+        select.addEventListener("touchstart", function(event) {
+            event.stopPropagation(); // 부모 요소의 클릭 이벤트 전파 방지
+        });
     }
 }
 
