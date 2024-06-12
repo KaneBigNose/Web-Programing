@@ -1,11 +1,3 @@
-// 지도 초기화
-var mapContainer = document.getElementById('map'); // 지도를 표시할 div 
-var mapOption = {
-    center: new kakao.maps.LatLng(35.13986, 129.10535), // 지도의 중심좌표
-    level: 5 // 지도의 확대 레벨
-}; 
-
-var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
 
 // 폴리라인 좌표 데이터 배열
 var lines = [
