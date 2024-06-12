@@ -1,3 +1,5 @@
+//CurrentLoc.js
+
 var mapContainer = document.getElementById('map'); // 지도를 표시할 div 요소
 var mapOption = {
     center: new kakao.maps.LatLng(33.450701, 126.570667), // 초기 지도의 중심 좌표
@@ -7,6 +9,12 @@ var mapOption = {
 var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
 var marker = null; // 현재 마커를 가리키는 변수
 var isFirstLoad = true; // 페이지가 처음 로드되었는지 여부를 나타내는 변수
+
+// 지도 확대 축소를 제어할 수 있는 줌 컨트롤을 생성합니다
+var zoomControl = new kakao.maps.ZoomControl();
+map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+
+
 
 // HTML5의 geolocation을 지원하는지 확인합니다 
 if (navigator.geolocation) {
@@ -58,3 +66,4 @@ if (navigator.geolocation) {
     // 인포윈도우를 마커 위에 표시합니다 
     infowindow.open(map, marker);
 }
+

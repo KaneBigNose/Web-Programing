@@ -1,11 +1,3 @@
-// 지도 초기화
-var mapContainer = document.getElementById('map'); // 지도를 표시할 div 
-var mapOption = {
-    center: new kakao.maps.LatLng(35.13986, 129.10535), // 지도의 중심좌표
-    level: 5 // 지도의 확대 레벨
-}; 
-
-var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
 
 // 폴리라인 좌표 데이터 배열
 var lines = [
@@ -533,6 +525,8 @@ var lines = [
     ]
 ];
 
+var polylines = [];
+
 // 폴리라인을 지도에 표시하는 함수
 function drawPolyline(pathData) {
     var path = pathData.map(function(point) {
@@ -547,7 +541,15 @@ function drawPolyline(pathData) {
         strokeOpacity: 0.5, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
         strokeStyle: 'solid' // 선의 스타일입니다
     });
+    polyline.setMap(map);
+    polylines.push(polyline);
 }
 
-// 모든 폴리라인을 지도에 추가
-lines.forEach(drawPolyline);
+function deleteAllPolylines() {
+    // 배열에 저장된 모든 폴리라인 삭제
+    for (var i = 0; i < polylines.length; i++) {
+        polylines[i].setMap(null);
+    }
+    // 배열 초기화
+    polylines = [];
+}
