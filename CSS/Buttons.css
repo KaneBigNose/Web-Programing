@@ -1,3 +1,4 @@
+
 button {
     width: 347px;
     height: 40px;
@@ -9,9 +10,7 @@ button {
     transition: all 0.3s ease;
 }
 
-button:hover {
-    background-color: #1a4e1d;
-}
+
 
 .btn-group {
     width: 100%;
@@ -46,7 +45,10 @@ button:hover {
 }
 
 
-#illegalBtn:hover,
-#parkingBtn:hover {
-    background-color: lightgray;
-}
+@media (hover: none) {
+    #illegalBtn.color,
+    #parkingBtn.color {
+        background-color: lightgray;
+    }
+  }
+ 

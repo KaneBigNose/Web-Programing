@@ -1,3 +1,4 @@
+
 function openWindowAndDisableButton() {
     var button = document.getElementById('navBtn');
     button.disabled = true;
@@ -49,3 +50,16 @@ function toggleillegal() {
         illegalOnclick = false;
     }
 }
+
+//버튼 누름 효과
+document.addEventListener('DOMContentLoaded', () => {
+    const button = document.getElementById('illegalBtn');
+    const button2 = document.getElementById('parkingBtn');
+    
+    button.addEventListener('click', () => {
+        button.classList.toggle('color');
+      });
+    button2.addEventListener('click', () => {
+      button2.classList.toggle('color');
+    });
+  });
