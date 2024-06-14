@@ -51,7 +51,7 @@ function toggleillegal() {
     }
 }
 
-
+//버튼 누름 효과
 document.addEventListener('DOMContentLoaded', () => {
     const button = document.getElementById('illegalBtn');
     const button2 = document.getElementById('parkingBtn');
