@@ -78,7 +78,7 @@ select {
     color: red;
     text-align: center;
     border: 0.5px solid black;
-    padding-top: 11px;
+    padding-top: 12px;
     border-top: 0px;
 }
 
@@ -89,7 +89,7 @@ select {
     color: black;
     text-align: center;
     border: 0.5px solid black;
-    padding-top: 11px;
+    padding-top: 4px;
     border-top: 0px;
 }
 
