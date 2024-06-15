@@ -56,7 +56,7 @@ button {
 
 #currentLocationBtn {
     position: absolute;
-    top:130px;
+    top:100px;
     right:15px;
     width:36px;
     height: 36px;
@@ -76,7 +76,7 @@ button {
 /*지도 확대,축소 버튼*/
 .custom_zoomcontrol {
     position:absolute;
-    top:170px;
+    top:140px;
     right:15px;
     width:36px;
     height:80px;
@@ -102,3 +102,5 @@ button {
 .custom_zoomcontrol span:first-child{
     border-bottom:1px solid #bfbfbf;
 }        
+
+

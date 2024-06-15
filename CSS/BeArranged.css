@@ -49,7 +49,7 @@
 .bottom-sheet {
     position: fixed;
     bottom: 0;
-    width: 95%;
+    width: 98%;
     background: white;
     padding: 0px;
     z-index: 1000;
@@ -76,7 +76,7 @@
 
     .bottom-sheet {
         position: absolute;
-        width: 95%;
+        width: 98%;
         max-width: 100%; /* 선택적으로 최대 너비를 지정할 수 있습니다. */
         background: white;
         padding: 10px;
