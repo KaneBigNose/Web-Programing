@@ -7,6 +7,17 @@ function addMarkersFromJson(jsonFilePath) {
 
             data.forEach(item => {
 
+                var address = item.소재지지번주소;
+                var name = item.주차장명;
+                var pkNumber = item.전화번호;
+                var pkTime1 = item.평일운영시작시각 + " ~ " + item.평일운영종료시각;
+                var pkTime2 = item.토요일운영시작시각 + " ~ " + item.토요일운영종료시각;
+                var pkTime3 = item.공휴일운영시작시각 + " ~ " + item.공휴일운영종료시각;
+                var pkNeedMoney = item.요금정보;
+                var pkBaseFee = item.주차기본요금;
+                var pkDayFee = item.하루주차권요금;
+                var pkMonthFee = item.월정기권요금;
+
                 if (address && address.includes(',')) {
                     address = item.소재지도로명주소;
                 }

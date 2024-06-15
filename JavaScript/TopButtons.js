@@ -55,6 +55,7 @@ function toggleillegal() {
 document.addEventListener('DOMContentLoaded', () => {
     const button = document.getElementById('illegalBtn');
     const button2 = document.getElementById('parkingBtn');
+    const button3=document.getElementById('currentLocationBtn');
     
     button.addEventListener('click', () => {
         button.classList.toggle('color');
@@ -62,4 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     button2.addEventListener('click', () => {
       button2.classList.toggle('color');
     });
+    button3.addEventListener('click', () => {
+        button3.classList.toggle('color');
+      });
   });

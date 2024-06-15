@@ -9,11 +9,19 @@ var mapOption = {
 var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
 var marker = null; // 현재 마커를 가리키는 변수
 var isFirstLoad = true; // 페이지가 처음 로드되었는지 여부를 나타내는 변수
+var watchId = null;
+var intervalId = null;
 
-// 지도 확대 축소를 제어할 수 있는 줌 컨트롤을 생성합니다
-var zoomControl = new kakao.maps.ZoomControl();
-map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
 
+
+function zoomIn() {
+    map.setLevel(map.getLevel() - 1);
+}
+
+// 지도 확대, 축소 컨트롤에서 축소 버튼을 누르면 호출되어 지도를 확대하는 함수입니다
+function zoomOut() {
+    map.setLevel(map.getLevel() + 1);
+}
 
 
 // HTML5의 geolocation을 지원하는지 확인합니다 
@@ -24,8 +32,7 @@ if (navigator.geolocation) {
 
         var lat = position.coords.latitude; // 위도
         var lon = position.coords.longitude; // 경도
-
-        var locPosition = new kakao.maps.LatLng(lat, lon); // 마커가 표시될 위치를 GeoLocation 좌표로 생성합니다
+        locPosition = new kakao.maps.LatLng(lat, lon); // 마커가 표시될 위치를 GeoLocation 좌표로 생성합니다
 
         // 페이지가 처음 로드된 경우에만 지도의 중심 좌표를 현재 위치로 설정합니다
         if (isFirstLoad) {
@@ -67,3 +74,25 @@ if (navigator.geolocation) {
     infowindow.open(map, marker);
 }
 
+
+// '현재 위치' 버튼 클릭 시 현재 위치로 지도의 중심을 이동시키고 주기적으로 업데이트합니다
+document.getElementById('currentLocationBtn').addEventListener('click', function() {
+    // 이전에 설정된 인터벌이 있으면 해제합니다
+    if (intervalId !== null) {
+        clearInterval(intervalId);
+        intervalId = null;
+        return;
+    }
+
+    // 현재 위치로 지도의 중심을 설정하고 주기적으로 업데이트합니다
+    if (locPosition) {
+        map.setCenter(locPosition);
+        intervalId = setInterval(function() {
+            if (locPosition) {
+                map.setCenter(locPosition);
+            }
+        }, 1000); // 2초마다 위치 업데이트
+    } else {
+        alert('현재 위치를 불러올 수 없습니다.');
+    }
+});

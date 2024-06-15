@@ -3,7 +3,7 @@ button {
     width: 347px;
     height: 40px;
     font-size: 16px;
-    background-color: skyblue;
+    background-color: white;
     color: white;
     border-radius: 10px;
     cursor: default;
@@ -47,8 +47,58 @@ button {
 
 @media (hover: none) {
     #illegalBtn.color,
-    #parkingBtn.color {
+    #parkingBtn.color,
+    #currentLocationBtn.color {
         background-color: lightgray;
     }
   }
  
+
+#currentLocationBtn {
+    position: absolute;
+    top:130px;
+    right:15px;
+    width:36px;
+    height: 36px;
+    background-image: url('/Images/current.png'); /* 배경 이미지 설정 */
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #444;
+    cursor: pointer;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    padding: 6px 12px;
+    z-index: 1;
+}
+/*지도 확대,축소 버튼*/
+.custom_zoomcontrol {
+    position:absolute;
+    top:170px;
+    right:15px;
+    width:36px;
+    height:80px;
+    overflow:hidden;
+    z-index:1;
+    background-color:#f5f5f5;
+    border-radius: 4px;
+    border:0.5px solid #bfbfbf;
+} 
+.custom_zoomcontrol span {
+    display:block;
+    width:36px;
+    height:40px;
+    text-align:center;
+    cursor:pointer;
+}     
+.custom_zoomcontrol span img {
+    width:15px;
+    height:15px;
+    padding:12px 0;
+
+}             
+.custom_zoomcontrol span:first-child{
+    border-bottom:1px solid #bfbfbf;
+}        
