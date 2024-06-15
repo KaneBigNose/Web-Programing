@@ -30,13 +30,3 @@
     border-bottom-right-radius: 10px;
     overflow-y: auto;
 }
-
-/*주차장 정보 글자박스*/
-.subtitle-box{
-    display: inline-block;
-
-    height: 100%;
-    border: 1px solid #ccc;
-    color:black;
-    margin: 10px;
-}
