@@ -43,7 +43,6 @@
     border-right: 0px;
     padding-top: 9px;
     padding-left:3px;
-
 }
 
 .inner-number {
@@ -137,7 +136,7 @@
     background-color: darkgray;
     border-radius: 20px;
     height: 8px;
-    width: 100%;
+    width: 120px;
     margin: 10px;
     margin-left: 40px;
     position: relative;
