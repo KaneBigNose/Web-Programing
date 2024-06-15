@@ -3,6 +3,11 @@
 .title-container {
     text-align: left;
     margin: 0px;
+    height: 30px;
+    display: flex;
+    align-items: center; /* 수직 정렬을 위해 중앙 정렬 */
+    justify-content: space-between; /* h2와 버튼 사이의 공간을 최대화 */
+    padding: 1px; /* h2와 버튼 주변의 여백 */
 }
 
 .button-container {

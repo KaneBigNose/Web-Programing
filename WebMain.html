@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="utf-8">
-
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
 
@@ -11,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="CSS/BeArranged.css">
     <link rel="stylesheet" type="text/css" href="CSS/Boxes.css">
     <link rel="stylesheet" type="text/css" href="CSS/ParkingInfo.css">
+    <link rel="stylesheet" type="text/css" href="manual/manualCSS.css"> <!-- 팝업 스타일을 위한 CSS 파일 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
@@ -30,6 +30,7 @@
     <script src="JavaScript/polyline.js" defer></script>
     <script src="JavaScript/ParkingMarker.js" defer></script>
     <script src="JavaScript/BottomSheet.js" defer></script>
+    <script src="manual/manualJS.js" defer></script> <!-- 팝업 제어를 위한 JavaScript 파일 -->
 
     <title>CLPK(Clean Parking)</title>
 </head>
@@ -37,6 +38,7 @@
 <body>
     <div class="title-container">
         <h2>CLPK(Clean Parking)</h2>
+        <button id="PopupBtn" onclick="showPopup(0)">메뉴얼</button>
     </div>
 
     <div id="btnContainer" class="btn-container hidden">
@@ -49,12 +51,66 @@
     <div class="map-container">
         <div id="map"></div>
         <button id="currentLocationBtn"></button>
+        <div class="custom_zoomcontrol radius_border"> 
+            <span onclick="zoomIn()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_plus.png" alt="확대"></span>  
+            <span onclick="zoomOut()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_minus.png" alt="축소"></span>
+    </div>
 
-    <div class="custom_zoomcontrol radius_border"> 
-        <span onclick="zoomIn()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_plus.png" alt="확대"></span>  
-        <span onclick="zoomOut()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_minus.png" alt="축소"></span>
+    <!-- 팝업 메뉴얼 시작 -->
+    
+
+    <div id="overlay" class="overlay"></div>
+
+    <div id="popup0" class="popup">
+        <div class="popup-header">1. 지도</div>
+        <div class="popup-body">
+            <img src="image1.jpg" alt="첫 번째 도움말 이미지">
+            <p>지도입니다. 가장 기본적인 길찾기 수단입니다.</p>
+        </div>
+        <div class="popup-buttons">
+            <button onclick="closePopup()">닫기</button>
+            <button onclick="nextPopup(1)">다음</button>
+        </div>
     </div>
+
+    <div id="popup1" class="popup">
+        <div class="popup-header">2. 주정차금지 구역과 주차장 위치</div>
+        <div class="popup-body">
+            <img src="image2.jpg" alt="두 번째 도움말 이미지">
+            <p>주정차금지 구역 탭과 주차장 위치 탭입니다.</p>
+        </div>
+        <div class="popup-buttons">
+            <button onclick="prevPopup(0)">이전</button>
+            <button onclick="closePopup()">닫기</button>
+            <button onclick="nextPopup(2)">다음</button>
+        </div>
     </div>
+
+    <div id="popup2" class="popup">
+        <div class="popup-header">3. 인근 주차장 정보 맞춤 필터링</div>
+        <div class="popup-body">
+            <img src="image3.jpg" alt="세 번째 도움말 이미지">
+            <p>인근 주차장 정보를 맞춤으로 필터링합니다.</p>
+        </div>
+        <div class="popup-buttons">
+            <button onclick="prevPopup(1)">이전</button>
+            <button onclick="closePopup()">닫기</button>
+            <button onclick="nextPopup(3)">다음</button>
+        </div>
+    </div>
+
+    <div id="popup3" class="popup">
+        <div class="popup-header">4. 주차장 세부 정보</div>
+        <div class="popup-body">
+            <img src="image4.jpg" alt="네 번째 도움말 이미지">
+            <p>주차장 세부 정보입니다.</p>
+        </div>
+        <div class="popup-buttons">
+            <button onclick="prevPopup(2)">이전</button>
+            <button onclick="closePopup()">닫기</button>
+        </div>
+    </div>
+    <!-- 팝업 메뉴얼 끝 -->
 
     <script type="text/javascript"
         src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=ab20dd7e58d76f56e7c1af0c3c89152b&libraries=services,clusterer,drawing"></script>
@@ -71,7 +127,40 @@
             markers.forEach(marker => marker.setMap(null));
             markers = [];
         }
+
+        // 팝업 제어 함수들
+        function showPopup(index) {
+            document.getElementById('overlay').style.display = 'block';
+            document.getElementById('popup' + index).style.display = 'block';
+        }
+
+        function closePopup() {
+            document.getElementById('overlay').style.display = 'none';
+            var popups = document.getElementsByClassName('popup');
+            for (var i = 0; i < popups.length; i++) {
+                popups[i].style.display = 'none';
+            }
+        }
+
+        function nextPopup(currentIndex) {
+            var nextIndex = currentIndex + 1;
+            var currentPopup = document.getElementById('popup' + currentIndex);
+            var nextPopup = document.getElementById('popup' + nextIndex);
+
+            currentPopup.style.display = 'none';
+            nextPopup.style.display = 'block';
+        }
+
+        function prevPopup(currentIndex) {
+            var prevIndex = currentIndex - 1;
+            var currentPopup = document.getElementById('popup' + currentIndex);
+            var prevPopup = document.getElementById('popup' + prevIndex);
+
+            currentPopup.style.display = 'none';
+            prevPopup.style.display = 'block';
+        }
     </script>
+
     <div class="bottom-sheet" id="bottomSheet">
         <div class="box box1">
             <div class="inner-upbox">
@@ -85,6 +174,7 @@
         </div>
         <div class="box box2" id="bottomSheetDown"></div>
     </div>
+
 </body>
 
 </html>
