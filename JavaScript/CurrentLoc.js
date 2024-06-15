@@ -86,12 +86,13 @@ document.getElementById('currentLocationBtn').addEventListener('click', function
 
     // 현재 위치로 지도의 중심을 설정하고 주기적으로 업데이트합니다
     if (locPosition) {
-        map.setCenter(locPosition);
-        intervalId = setInterval(function() {
-            if (locPosition) {
-                map.setCenter(locPosition);
-            }
-        }, 1000); // 2초마다 위치 업데이트
+         // 부드러운 모션으로 지도의 중심을 현재 위치로 이동합니다
+         map.panTo(locPosition, { duration: 1000 }); // 1초 동안 부드럽게 이동
+         intervalId = setInterval(function() {
+             if (locPosition) {
+                 map.panTo(locPosition, { duration: 1000 }); // 1초마다 위치 업데이트
+             }
+         }, 1000); // 1초마다 위치 업데이트
     } else {
         alert('현재 위치를 불러올 수 없습니다.');
     }
