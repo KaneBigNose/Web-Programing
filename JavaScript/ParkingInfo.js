@@ -9,7 +9,6 @@ function toggleParking() {
     prkOnclick = true;
   } else {
     clearMarkers();
-    clearBox2();
     prkOnclick = false;
   }
 }
