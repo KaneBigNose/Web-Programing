@@ -56,6 +56,29 @@
             <span onclick="zoomOut()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_minus.png" alt="축소"></span>
     </div>
 
+
+    <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.0/kakao.min.js"
+    integrity="sha384-l+xbElFSnPZ2rOaPrU//2FF5B4LB8FiX5q4fXYTlfcG4PGpMkE1vcL7kNXI6Cci0" crossorigin="anonymous"></script>
+  <script>
+    Kakao.init('2d1c2eac9c9a742727b5d20732316fc1'); // 사용하려는 앱의 JavaScript 키 입력
+  </script>
+  
+  <!--<a id="start-navigation" href="javascript:startNavigation()">
+    <img src="https://developers.kakao.com/assets/img/about/buttons/navi/kakaonavi_btn_medium.png"
+      alt="길 안내하기 버튼" />
+  </a>
+  
+  <script>
+    function startNavigation(name, x, y) {
+        Kakao.Navi.start({
+            name: name,
+            x: x,
+            y: y,
+            coordType: 'wgs84',
+        });
+    }
+</script>-->
+
     <!-- 팝업 메뉴얼 시작 -->
     
 
@@ -131,7 +154,7 @@
     <!-- 팝업 메뉴얼 끝 -->
 
     <script type="text/javascript"
-        src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=ab20dd7e58d76f56e7c1af0c3c89152b&libraries=services,clusterer,drawing"></script>
+        src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=2d1c2eac9c9a742727b5d20732316fc1&libraries=services,clusterer,drawing"></script>
     <script>
         const illegalUrl = 'https://apis.data.go.kr/6260000/BusanIlglWkstInfoService/getIlglWkstInfo?serviceKey=%2B9h%2BiNdRBhISq%2BfkcRcEXacYgP9rBOreEaMlS6GulIOg18rVyFYyqnJa4l8yBvHsHn860gZpbboSHpRtR5IFfw%3D%3D&numOfRows=500&pageNo=4&resultType=json';
 
@@ -184,7 +207,7 @@
             <div class="inner-upbox">
                 <div class="subtitle-box">주차장 정보</div>
                 <div class="inner-scroll" id="bottomSheetUp"></div>
-                <select class="filter">
+                <select class="filter" id="filter">
                     <option value="1" selected>거리순</option>
                     <option value="2">요금순</option>
                 </select>

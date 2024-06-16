@@ -8,13 +8,25 @@
     box-sizing: border-box;
 }
 
+.inner-pkbutton {
+    display: flex;
+    height: 85%;
+    width: 100%;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 0px;
+    padding: 0px;
+    z-index: 0;
+    background-color: white;
+}
+
 .inner-info1 {
     display: flex;
     flex-direction: row;
     border-bottom: 0px;
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    width: 100%;
 }
 
 .inner-info2 {
@@ -22,7 +34,7 @@
     flex-direction: row;
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    width: 100%;
 }
 
 .inner-info-row {

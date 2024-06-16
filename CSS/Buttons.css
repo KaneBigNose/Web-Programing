@@ -1,5 +1,5 @@
 
-button {
+/* button {
     width: 347px;
     height: 40px;
     font-size: 16px;
@@ -8,9 +8,7 @@ button {
     border-radius: 10px;
     cursor: default;
     transition: all 0.3s ease;
-}
-
-
+} */
 
 .btn-group {
     width: 100%;
