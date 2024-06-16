@@ -1,7 +1,8 @@
 
 #PopupBtn{
     width:36px;
-    padding: 0px 0px; /* 버튼 내부 여백 */
+    height: 20px;
+    padding: 2px 2px; /* 버튼 내부 여백 */
     font-size: 10px; /* 버튼 텍스트 크기 */
     background-color: #093a2e; /* 배경색 */
     color: #fff; /* 텍스트 색상 */
