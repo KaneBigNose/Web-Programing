@@ -153,6 +153,7 @@ function createInfoBox(item, coords) {
     let payBox = document.createElement('div');
     payBox.className = 'inner-pay';
     payBox.innerHTML = item.요금정보 === "유료" ?
+
         `기본요금: ${item.주차기본요금 ? `${item.주차기본요금}원` : '정보없음'}<br>
          하루요금: ${item.하루주차권요금 ? `${item.하루주차권요금}원` : '정보없음'}<br>
          월정기권: ${item.월정기권요금 ? `${item.월정기권요금}원` : '정보없음'}`:
@@ -179,4 +180,7 @@ function startNavigation(name, x, y) {
         coordType: 'katec',
         //coordType: 'wgs84',
     });
+ 
+    return infoBox;
+
 }
