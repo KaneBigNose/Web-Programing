@@ -160,27 +160,6 @@ function createInfoBox(item, coords) {
         `주차요금: ${item.요금정보 || '정보없음'}`;
     infoBox2.appendChild(payBox);
 
-    // 길 안내 버튼 추가
-    let navButton = document.createElement('button');
-    navButton.textContent = '길 안내';
-    navButton.addEventListener("click", function () {
-        startNavigation(item.주차장명, coords.lng, coords.lat);
-    });
-    infoBox2.appendChild(navButton);
-
-
-    return infoBox;
-}
-function startNavigation(name, x, y) {
-    alert(`Name: ${name}, X: ${x}, Y: ${y}`);
-    Kakao.Navi.start({
-        name: name,
-        x: x,
-        y: y,
-        coordType: 'katec',
-        //coordType: 'wgs84',
-    });
- 
     return infoBox;
 
 }
