@@ -1,4 +1,5 @@
 var saveAdress = [];
+var customOverlays = [];
 var infoBoxes = [];
 
 makeInfo(jsonFilePath);
