@@ -1,4 +1,5 @@
 var saveAdress = [];
+let customOverlays = [];
 
 makeInfo(jsonFilePath);
 
@@ -12,7 +13,7 @@ function addMarkersFromJson(jsonFilePath) {
                 let name = item.주차장명;
 
                 if (address) {
-                    geocodeAddressAndAddMarker(address, name);
+                    geocodeAddressAndAddMarker(address, name, item);
                 }
             });
         })
@@ -20,18 +21,18 @@ function addMarkersFromJson(jsonFilePath) {
         .finally(() => document.getElementById('parkingBtn').disabled = false);
 }
 
-function geocodeAddressAndAddMarker(address, name) {
+function geocodeAddressAndAddMarker(address, name, item) {
     geocoder.addressSearch(address, function (result, status) {
         if (status === kakao.maps.services.Status.OK) {
             let coords = new kakao.maps.LatLng(result[0].y, result[0].x);
-            addMarker(coords, name);
+            addMarker(coords, name, item);
         } else {
             console.error('Failed to search address:', address);
         }
     });
 }
 
-function addMarker(coords, name) {
+function addMarker(coords, name, item) {
     let marker = new kakao.maps.Marker({
         map: map,
         position: coords,
@@ -39,12 +40,107 @@ function addMarker(coords, name) {
     });
     markers.push(marker);
 
-    let content = `<div>${name}</div>`;
-    let infoWindow = new kakao.maps.InfoWindow({ content: content });
+    let content = createCustomOverlayContent(name, item, coords);
+    let customOverlay = new kakao.maps.CustomOverlay({
+        position: coords,
+        content: content,
+        xAnchor: 0.5,
+        yAnchor: 1.5
+    });
 
-    kakao.maps.event.addListener(marker, "click", mouseClickListener(map, marker, infoWindow));
-    kakao.maps.event.addListener(marker, "mouseout", mouseOutListener(infoWindow));
+    // 커스텀 오버레이 배열에 추가
+    customOverlays.push(customOverlay);
+
+    kakao.maps.event.addListener(marker, "click", function() {
+        // 모든 커스텀 오버레이 닫기
+        closeAllCustomOverlays();
+
+        // 선택된 마커의 커스텀 오버레이 열기
+        customOverlay.setMap(map);
+    });
 }
+
+
+function closeAllCustomOverlays() {
+    // 모든 커스텀 오버레이 닫기
+    for (let i = 0; i < customOverlays.length; i++) {
+        customOverlays[i].setMap(null);
+    }
+}
+
+function createCustomOverlayContent(name, item, coords) {
+    let content = document.createElement('div');
+    content.className = 'customoverlay';
+
+    // 주차장 이름
+    let title = document.createElement('div');
+    title.className = 'title';
+    title.textContent = name;
+    content.appendChild(title);
+
+    // 주차장 운영 상태 확인
+    let operationStatus = getOperationStatus(
+        `${item.평일운영시작시각} ~ ${item.평일운영종료시각}`,
+        `${item.토요일운영시작시각} ~ ${item.토요일운영종료시각}`,
+        `${item.공휴일운영시작시각} ~ ${item.공휴일운영종료시각}`
+    );
+    let statusClass = getStatusClass(item, operationStatus);
+
+    let status = document.createElement('div');
+    status.className = `status ${statusClass}`;
+    status.textContent = operationStatus;
+    content.appendChild(status);
+
+    // 주차 요금 정보 표시
+    let feeInfo = document.createElement('div');
+    feeInfo.className = 'fee';
+
+    if (item.요금정보 === "유료") {
+        feeInfo.innerHTML = `
+            기본요금: ${item.주차기본요금 ? `${item.주차기본요금}원` : '정보없음'}<br>
+            하루요금: ${item.하루주차권요금 ? `${item.하루주차권요금}원` : '정보없음'}<br>
+            월정기권: ${item.월정기권요금 ? `${item.월정기권요금}원` : '정보없음'}
+        `;
+    } else {
+        feeInfo.textContent = `주차요금: ${item.요금정보 || '정보없음'}`;
+    }
+    content.appendChild(feeInfo);
+
+    // 길찾기 버튼 추가
+    let navButton = document.createElement('button');
+    navButton.className = 'info-nav-btn';
+    navButton.textContent = '길찾기';
+    navButton.addEventListener('click', function() {
+        startNavigation(name, coords.getLng(), coords.getLat());
+    });
+    content.appendChild(navButton);
+
+    // 닫기 버튼 추가
+    let closeButton = document.createElement('button');
+    closeButton.className = 'close-btn';
+    closeButton.textContent = '닫기';
+    closeButton.addEventListener('click', closeAllCustomOverlays);
+    content.appendChild(closeButton);
+
+    return content;
+}
+
+function getStatusClass(item, operationStatus) {
+    if (operationStatus === "운영중") {
+        return "inner-Open";
+    } else if (operationStatus === "운영종료") {
+        return "inner-Close";
+    } else {
+        return "inner-Not";
+    }
+}
+
+function startNavigation(name, lat, lng) {
+    var link = `https://map.kakao.com/link/to/${name},${lat},${lng}`;
+    window.location.href = link;
+}
+
+
 
 function getDistance(lat1, lng1, lat2, lng2) {
     function deg2rad(deg) { return deg * (Math.PI / 180); }
