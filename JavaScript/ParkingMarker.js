@@ -166,11 +166,28 @@ function createInfoBox(item, coords) {
 
     // 길 안내 버튼 추가
     let navButton = document.createElement('button');
-    navButton.textContent = '길 안내';
+
     navButton.className='loadbutton';
     navButton.addEventListener("click", function () {
         startNavigation(item.주차장명, coords.lng, coords.lat);
     }); 
+    // 버튼에 들어갈 텍스트 요소 생성
+    let textNode = document.createTextNode('길찾기');
+    // 버튼에 들어갈 이미지 요소 생성
+    let imgElement = document.createElement('img');
+    imgElement.src = '/Images/Navi.png';  // 여기에 이미지 URL을 넣으세요
+    imgElement.alt = '이미지';  // 이미지 대체 텍스트
+
+    // 텍스트와 이미지를 래핑할 컨테이너 생성
+    let buttonContent = document.createElement('div');
+    buttonContent.className = 'button-content';
+
+    // 텍스트와 이미지를 컨테이너에 추가
+    buttonContent.appendChild(textNode);
+    buttonContent.appendChild(imgElement);
+    // 컨테이너를 버튼에 추가
+    navButton.appendChild(buttonContent);
+    // 버튼을 infoBox3에 추가
     infoBox3.appendChild(navButton);
 
 

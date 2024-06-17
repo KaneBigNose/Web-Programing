@@ -45,19 +45,39 @@
 }
 
 .loadbutton{
-    background-color: yellow;
+    display: inline-flex;
+    background-color: rgb(245, 229, 60);
     display: flex;
-    height: 10px;
-    width: 10px;
+    height: 30px;
+    width: 25%;
+    right:10px;
     flex-direction: column;
-    border: 1px solid black;
+    border: 1px solid rgb(154, 143, 25);
     margin: 0px;
     padding: 0px;
     z-index: 0;
-    border-radius:20px;
-    align-items: center ;
+    border-radius:10px;
+    align-items: center;  /* 수직 중앙 정렬 */
+    justify-content: center;  /* 수평 중앙 정렬 */
     margin-left: auto;
 
+}
+.button-content {
+    display: flex;
+    align-items: center;
+    line-height: 0px;
+    align-items: center;  /* 수직 중앙 정렬 */
+    justify-content: space-between;
+    width: 65%;
+}
+
+.button-content span {
+    margin-right: 0px;  
+}
+
+.button-content img {
+    width: 20px;  
+    height: 20px; 
 }
 .inner-info-row {
     display: flex;
