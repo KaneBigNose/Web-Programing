@@ -47,12 +47,13 @@
 .loadbutton{
     display: inline-flex;
     background-color: rgb(245, 229, 60);
+    color:white;
     display: flex;
     height: 30px;
     width: 25%;
     right:10px;
     flex-direction: column;
-    border: 1px solid rgb(154, 143, 25);
+    border: none;
     margin: 0px;
     padding: 0px;
     z-index: 0;
@@ -73,6 +74,7 @@
 
 .button-content span {
     margin-right: 0px;  
+    border:none;
 }
 
 .button-content img {
@@ -110,7 +112,15 @@
     padding-top: 9px;
 
 }
-
+.inner-Open{
+    color:blue;
+}
+.inner-Close{
+    color:red;
+}
+.inner-Not{
+    color:black;
+}
 .inner-isOpen {
     flex: 1;
     font-size: 16px;
@@ -120,6 +130,7 @@
     padding-top: 11px;
     border-top: 0px;
 }
+
 
 .inner-isClose {
     width: 100px;

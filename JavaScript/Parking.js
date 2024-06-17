@@ -49,15 +49,3 @@ function getOperationStatus(pkTime1, pkTime2, pkTime3) {
     }
 }
 
-function mouseClickListener(map, marker, infoWindow) {
-    return function () {
-        infoWindow.open(map, marker);
-    };
-}
-
-function mouseOutListener(infoWindow) {
-    return function () {
-        infoWindow.close();
-    };
-}
-
