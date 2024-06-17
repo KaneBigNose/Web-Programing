@@ -132,7 +132,7 @@
     <!-- 팝업 메뉴얼 끝 -->
 
     <script type="text/javascript"
-        src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=2d1c2eac9c9a742727b5d20732316fc1&libraries=services,clusterer,drawing"></script>
+        src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=ab20dd7e58d76f56e7c1af0c3c89152b&libraries=services,clusterer,drawing"></script>
     <script>
         const illegalUrl = 'https://apis.data.go.kr/6260000/BusanIlglWkstInfoService/getIlglWkstInfo?serviceKey=%2B9h%2BiNdRBhISq%2BfkcRcEXacYgP9rBOreEaMlS6GulIOg18rVyFYyqnJa4l8yBvHsHn860gZpbboSHpRtR5IFfw%3D%3D&numOfRows=500&pageNo=4&resultType=json';
 
@@ -185,8 +185,8 @@
             <div class="inner-upbox">
                 <div class="subtitle-box">주차장 정보</div>
                 <div class="inner-scroll" id="bottomSheetUp"></div>
-                <select class="filter" >
-                    <option value="1" selected>거리순</option>
+                <select id="filterbox" class="filter" onchange="howtosort();">
+                    <option value="1">거리순</option>
                     <option value="2">요금순</option>
                 </select>
             </div>

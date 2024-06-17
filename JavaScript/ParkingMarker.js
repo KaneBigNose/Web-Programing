@@ -1,6 +1,9 @@
 var saveAdress = [];
+var infoBoxes = [];
 
 makeInfo(jsonFilePath);
+
+sortInfoBoxesByDistance();
 
 function addMarkersFromJson(jsonFilePath) {
     document.getElementById('parkingBtn').disabled = true;
@@ -104,8 +107,8 @@ function createInfoBox(item, coords) {
     infoBox2.className = 'inner-info2';
     button.appendChild(infoBox2);
 
-    let infoBox3=document.createElement('div');
-    infoBox3.className='inner-info3';
+    let infoBox3 = document.createElement('div');
+    infoBox3.className = 'inner-info3';
     infoBox.appendChild(infoBox3);
 
     let titleBox = document.createElement('div');
@@ -114,13 +117,29 @@ function createInfoBox(item, coords) {
     infoBox1.appendChild(titleBox);
 
     let distanceBox = document.createElement('div');
-    navigator.geolocation.watchPosition(function (position) {
+    navigator.geolocation.getCurrentPosition(function (position) {
         let currentLat = position.coords.latitude;
         let currentLng = position.coords.longitude;
         let distance = getDistance(currentLat, currentLng, coords.lat, coords.lng);
+
+        let distanceBox = document.createElement('div');
         distanceBox.className = 'inner-number';
         distanceBox.textContent = `거리: ${distance.toFixed(3)}km`;
         infoBox1.appendChild(distanceBox);
+
+        let fee;
+        if(item.주차기본요금 == null) {
+            fee = "무료";
+        }
+        else {
+            fee = item.주차기본요금;
+        }
+
+        infoBoxes.push({
+            element: infoBox,
+            distance: distance,
+            fee: fee
+        });
     });
 
     let isOpenBox = document.createElement('div');
@@ -160,17 +179,17 @@ function createInfoBox(item, coords) {
 
         `기본요금: ${item.주차기본요금 ? `${item.주차기본요금}원` : '정보없음'}<br>
          하루요금: ${item.하루주차권요금 ? `${item.하루주차권요금}원` : '정보없음'}<br>
-         월정기권: ${item.월정기권요금 ? `${item.월정기권요금}원` : '정보없음'}`:
+         월정기권: ${item.월정기권요금 ? `${item.월정기권요금}원` : '정보없음'}` :
         `주차요금: ${item.요금정보 || '정보없음'}`;
     infoBox2.appendChild(payBox);
 
     // 길 안내 버튼 추가
     let navButton = document.createElement('button');
 
-    navButton.className='loadbutton';
+    navButton.className = 'loadbutton';
     navButton.addEventListener("click", function () {
         startNavigation(item.주차장명, coords.lng, coords.lat);
-    }); 
+    });
     // 버튼에 들어갈 텍스트 요소 생성
     let textNode = document.createTextNode('길찾기');
     // 버튼에 들어갈 이미지 요소 생성
@@ -190,7 +209,6 @@ function createInfoBox(item, coords) {
     // 버튼을 infoBox3에 추가
     infoBox3.appendChild(navButton);
 
-
     return infoBox;
 }
 
@@ -198,4 +216,33 @@ function startNavigation(name, x, y) {
 
     var link = `https://map.kakao.com/link/to/${name},${y},${x}`;
     window.location.href = link;
+}
+
+function howtosort() {
+    var sortSelect = document.getElementById("filterbox");
+    if (sortSelect.options[sortSelect.selectedIndex].value == 1) {
+        sortInfoBoxesByDistance();
+    }
+    else if (sortSelect.options[sortSelect.selectedIndex].value == 2) {
+        sortInfoBoxesByFee();
+    }
+}
+
+function sortInfoBoxesByDistance() {
+    infoBoxes.sort((a, b) => a.distance - b.distance);
+    updateInfoBoxDisplay();
+}
+
+function sortInfoBoxesByFee() {
+    infoBoxes.sort((a, b) => a.fee - b.fee);
+    updateInfoBoxDisplay();
+}
+
+function updateInfoBoxDisplay() {
+    const containerpk = document.getElementById('bottomSheetDown');
+    containerpk.innerHTML = '';
+
+    infoBoxes.forEach(box => {
+        containerpk.appendChild(box.element);
+    });
 }
