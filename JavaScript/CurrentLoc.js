@@ -64,14 +64,6 @@ if (navigator.geolocation) {
         position: locPosition
     });
 
-    // 인포윈도우를 생성합니다
-    var infowindow = new kakao.maps.InfoWindow({
-        content: message,
-        removable: true
-    });
-
-    // 인포윈도우를 마커 위에 표시합니다 
-    infowindow.open(map, marker);
 }
 
 
