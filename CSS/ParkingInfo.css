@@ -47,7 +47,7 @@
 .loadbutton{
     display: inline-flex;
     background-color: rgb(245, 229, 60);
-    color:black;
+    color:white;
     display: flex;
     height: 30px;
     width: 25%;
