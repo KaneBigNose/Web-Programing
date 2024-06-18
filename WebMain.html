@@ -66,7 +66,7 @@
     <div id="popup0" class="popup">
         <div class="popup-header">1. 지도</div>
         <div class="popup-body">
-            <img src="image1.jpg" alt="첫 번째 도움말 이미지">
+            <img src="Images/manual1.png" alt="첫 번째 도움말 이미지">
             <p>지도입니다. 가장 기본적인 길찾기 수단입니다.</p>
             <p>1. 위치 정보를 사용합니다. (모바일 설정>위치>위치 사용)</p>
             <p>2. 과녁 형상의 버튼을 누르면 현재위치를 중심으로 지도가 이동합니다.</p>
@@ -82,13 +82,12 @@
     <div id="popup1" class="popup">
         <div class="popup-header">2. 주정차금지 구역과 주차장 위치</div>
         <div class="popup-body">
-            <img src="image2.jpg" alt="두 번째 도움말 이미지">
+            <img src="Images/manual2.png" alt="두 번째 도움말 이미지">
             <p>주정차금지 구역 탭과 주차장 위치 탭입니다.</p>
             <p>1. 주정차금지 구역 탭을 누르면 주정차금지 구역이 지도에 표시됩니다.</p>
             <p>2. 주차장 위치 탭을 누르면 현재 위치를 중심으로 사용 가능한 주차장이 지도에 표시됩니다.</p>
             <p>3. 탭을 한 번 더 누르면 마커를 지웁니다.</p>
             <p>4. 탭을 모두 눌러 주정차금지 구역과 주차장 위치 모두 지도에 표시가 가능합니다.</p>
-            <p>5. 주차장 마커를 누르면 주차장의 이름과 간략한 정보가 나옵니다.</p>
         </div>
         <div class="popup-buttons">
             <button id="exit" onclick="closePopup()">닫기</button>
@@ -100,12 +99,12 @@
     <div id="popup2" class="popup">
         <div class="popup-header">3. 인근 주차장 정보 맞춤 필터링</div>
         <div class="popup-body">
-            <img src="image3.jpg" alt="세 번째 도움말 이미지">
+            <img src="Images/manual3-1.png" alt="세 번째 도움말 이미지">
+            <img src="Images/manual3-2.png" alt="세 번째 도움말 이미지">
             <p>인근 주차장 정보를 맞춤으로 필터링합니다.</p>
-            <p>1. 주차장 위치 탭을 누릅니다.</p>
-            <p>2. 지도 아래에 있는 툴박스에 주차장에 대한 세부 정보가 표시됩니다.</p>
-            <p>3. 거리순으로 나열하면 현재 위치에서 가장 가까운 순으로 주차장의 정보가 정렬됩니다.</p>
-            <p>4. 요금순으로 나열하면 주차장의 기본 요금이 낮은 순으로 주차장의 정보가 정렬됩니다.</p>
+            <p>1. 지도 아래에 있는 툴박스에 주차장에 대한 세부 정보가 표시됩니다.</p>
+            <p>2. 거리순으로 나열하면 현재 위치에서 가장 가까운 순으로 주차장의 정보가 정렬됩니다.</p>
+            <p>3. 요금순으로 나열하면 주차장의 기본 요금이 낮은 순으로 주차장의 정보가 정렬됩니다.</p>
         </div>
         <div class="popup-buttons">
             <button id="exit" onclick="closePopup()">닫기</button>
@@ -115,15 +114,15 @@
     </div>
 
     <div id="popup3" class="popup">
-        <div class="popup-header">4. 주차장 세부 정보</div>
+        <div class="popup-header">4. 인포윈도우와 길찾기 버튼</div>
         <div class="popup-body">
-            <img src="image4.jpg" alt="네 번째 도움말 이미지">
-            <p>주차장 세부 정보입니다.</p>
-            <p>1. 주정차금지 구역 탭을 누릅니다.</p>
-            <p>2. 주정차금지 구역에 대한 상세 정보가 나옵니다.</p>
-            <p>3. 주차장 위치 탭을 누릅니다.</p>
-            <p>4. 주차장에 대한 상세 정보가 나옵니다.</p>
-            <p>5. 길찾기 버튼을 누르면 카카오맵 사이트로 이동합니다.</p>
+            <img src="Images/manual4-1.png" alt="네 번째 도움말 이미지">
+            <img src="Images/manual4-2.png" alt="네 번째 도움말 이미지">
+            <p>인포윈도우 화면과 길찾기 버튼입니다.</p>
+            <p>1. 주차장 마커를 누르면 인포윈도우가 생성됩니다.</p>
+            <p>2. 인포윈도우에는 주차장의 간략한 정보와 길찾기 버튼이 있습니다.</p>
+            <p>3. 길찾기 버튼을 누르면 자동으로 목적지가 설정된 카카오맵 앱으로 이동합니다.</p>
+            <p>4. 길찾기 버튼은 인포윈도우와 주차장 정보 박스에 있습니다.</p>
         </div>
         <div class="popup-buttons">
             <button id="before"onclick="prevPopup(2)">이전</button>
@@ -133,7 +132,7 @@
     <!-- 팝업 메뉴얼 끝 -->
 
     <script type="text/javascript"
-        src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=ab20dd7e58d76f56e7c1af0c3c89152b&libraries=services,clusterer,drawing"></script>
+        src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=2d1c2eac9c9a742727b5d20732316fc1&libraries=services,clusterer,drawing"></script>
     <script>
         const illegalUrl = 'https://apis.data.go.kr/6260000/BusanIlglWkstInfoService/getIlglWkstInfo?serviceKey=%2B9h%2BiNdRBhISq%2BfkcRcEXacYgP9rBOreEaMlS6GulIOg18rVyFYyqnJa4l8yBvHsHn860gZpbboSHpRtR5IFfw%3D%3D&numOfRows=500&pageNo=4&resultType=json';
 
